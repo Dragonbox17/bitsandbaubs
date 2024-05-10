@@ -24,6 +24,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.JADE_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_JADE_ORE);
 
+        blockWithItem(ModBlocks.JADE_BLOCK);
+
         simpleBlockWithItem(ModBlocks.ALCHEMY_TABLE.get(),
                 new ModelFile.UncheckedModelFile(modLoc("block/alchemy_table")));
 

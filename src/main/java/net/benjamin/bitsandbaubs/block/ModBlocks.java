@@ -45,6 +45,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> DEEPSLATE_JADE_ORE =
             registerBlock("deepslate_jade_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).requiresCorrectToolForDrops(), UniformInt.of(3, 6)));
 
+    public static final RegistryObject<Block> JADE_BLOCK =
+            registerBlock("jade_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_GOLD_BLOCK)));
+
 
     public static final RegistryObject<Block> CORRUPTED_SAPLING =
             registerBlock("corrupted_sapling", () -> new SaplingBlock(new CorruptedTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
