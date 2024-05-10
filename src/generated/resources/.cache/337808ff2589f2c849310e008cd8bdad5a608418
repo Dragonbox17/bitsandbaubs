@@ -1,0 +1,9 @@
+// 1.20.1	2024-05-09T16:44:10.9194523	Tags for minecraft:block mod id bitsandbaubs
+9ab57f1d710b47978d372aa79e54a1bd7adf6cd2 data/minecraft/tags/blocks/fences.json
+eeebf181a74b2611f6524297235d588f46325574 data/minecraft/tags/blocks/fence_gates.json
+979b391d12010e8312c9087edc8f8a7efb4d08a8 data/minecraft/tags/blocks/leaves.json
+89cdf5e67ba026a8e1544c94dbace591256263e5 data/minecraft/tags/blocks/logs_that_burn.json
+14f366b559e99122eb9f59691c1f63fdd9be4cdc data/minecraft/tags/blocks/mineable/pickaxe.json
+14f366b559e99122eb9f59691c1f63fdd9be4cdc data/minecraft/tags/blocks/needs_iron_tool.json
+6aca6b1deb18f267082858cbe6d9b892ef5b6d8c data/minecraft/tags/blocks/planks.json
+d2708f65c794f69a63fefb25b613664129248b64 data/minecraft/tags/blocks/trapdoors.json

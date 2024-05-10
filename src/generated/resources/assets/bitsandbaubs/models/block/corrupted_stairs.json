@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "bitsandbaubs:block/corrupted_planks",
+    "side": "bitsandbaubs:block/corrupted_planks",
+    "top": "bitsandbaubs:block/corrupted_planks"
+  }
+}

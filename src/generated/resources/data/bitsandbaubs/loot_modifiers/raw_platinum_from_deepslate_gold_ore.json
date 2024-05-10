@@ -1,0 +1,14 @@
+{
+  "type": "bitsandbaubs:add_item",
+  "conditions": [
+    {
+      "block": "minecraft:deepslate_gold_ore",
+      "condition": "minecraft:block_state_property"
+    },
+    {
+      "chance": 0.4,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "item": "bitsandbaubs:raw_platinum"
+}

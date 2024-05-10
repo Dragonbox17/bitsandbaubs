@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:andesite"
+    },
+    "B": {
+      "item": "minecraft:glass_bottle"
+    },
+    "P": {
+      "item": "bitsandbaubs:platinum_ingot"
+    },
+    "S": {
+      "item": "minecraft:brewing_stand"
+    }
+  },
+  "pattern": [
+    "S B",
+    "PAP",
+    "AAA"
+  ],
+  "result": {
+    "item": "bitsandbaubs:alchemy_table"
+  },
+  "show_notification": true
+}

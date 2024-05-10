@@ -1,0 +1,121 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/cube_all",
+	"textures": {
+		"all": "bitsandbaubs:block/alchemy_table",
+		"1": "bitsandbaubs:block/alchemy_table"
+	},
+	"elements": [
+		{
+			"from": [3, 9, 5],
+			"to": [3, 16, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 0, 1.75], "texture": "#1"},
+				"east": {"uv": [8, 3.5, 9.5, 5.25], "texture": "#1"},
+				"south": {"uv": [0, 0, 0, 1.75], "texture": "#1"},
+				"west": {"uv": [8, 1.75, 9.5, 3.5], "texture": "#1"},
+				"up": {"uv": [0, 1.5, 0, 0], "rotation": 180, "texture": "#1"},
+				"down": {"uv": [0, 0, 0, 1.5], "rotation": 180, "texture": "#1"}
+			}
+		},
+		{
+			"from": [13, 9, 5],
+			"to": [13, 16, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 0, 1.75], "texture": "#1"},
+				"east": {"uv": [8, 7, 9.5, 8.75], "texture": "#1"},
+				"south": {"uv": [0, 0, 0, 1.75], "texture": "#1"},
+				"west": {"uv": [8, 5.25, 9.5, 7], "texture": "#1"},
+				"up": {"uv": [0, 1.5, 0, 0], "rotation": 180, "texture": "#1"},
+				"down": {"uv": [0, 0, 0, 1.5], "rotation": 180, "texture": "#1"}
+			}
+		},
+		{
+			"from": [1, 9, 8],
+			"to": [15, 16, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9, 8]},
+			"faces": {
+				"north": {"uv": [0, 8, 3.5, 9.75], "texture": "#1"},
+				"east": {"uv": [0, 0, 0, 1.75], "texture": "#1"},
+				"south": {"uv": [8, 0, 11.5, 1.75], "texture": "#1"},
+				"west": {"uv": [0, 0, 0, 1.75], "texture": "#1"},
+				"up": {"uv": [0, 3.5, 0, 0], "rotation": 270, "texture": "#1"},
+				"down": {"uv": [0, 0, 0, 3.5], "rotation": 90, "texture": "#1"}
+			}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [16, 9, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-5, 0, -5]},
+			"faces": {
+				"north": {"uv": [4, 0, 8, 2.25], "texture": "#1"},
+				"east": {"uv": [4, 2.25, 8, 4.5], "texture": "#1"},
+				"south": {"uv": [4, 4.5, 8, 6.75], "texture": "#1"},
+				"west": {"uv": [4, 6.75, 8, 9], "texture": "#1"},
+				"up": {"uv": [4, 4, 0, 0], "texture": "#1"},
+				"down": {"uv": [4, 4, 0, 8], "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"scale": [0.35, 0.35, 0.35]
+		},
+		"thirdperson_lefthand": {
+			"scale": [0.35, 0.35, 0.35]
+		},
+		"firstperson_righthand": {
+			"scale": [0.35, 0.35, 0.35]
+		},
+		"firstperson_lefthand": {
+			"scale": [0.35, 0.35, 0.35]
+		},
+		"ground": {
+			"scale": [0.35, 0.35, 0.35]
+		},
+		"gui": {
+			"rotation": [35, 45, 0],
+			"translation": [0, 0, 0],
+			"scale": [0.6, 0.6, 0.6]
+		}
+	},
+	"groups": [
+		{
+			"name": "alchemy_table",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"nbt": "{}",
+			"children": [
+				{
+					"name": "potions",
+					"origin": [0, 0, 0],
+					"color": 0,
+					"nbt": "{}",
+					"children": [
+						{
+							"name": "potion1",
+							"origin": [-5, 9, -5],
+							"rotation": [0, 90, 0],
+							"color": 0,
+							"nbt": "{}",
+							"children": [0]
+						},
+						{
+							"name": "potion2",
+							"origin": [0, 0, 0],
+							"rotation": [0, 90, 0],
+							"color": 0,
+							"nbt": "{}",
+							"children": [1]
+						},
+						2
+					]
+				},
+				3
+			]
+		}
+	],
+	"render_type": "minecraft:cutout"
+}

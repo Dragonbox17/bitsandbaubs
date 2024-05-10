@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "J": {
+      "item": "bitsandbaubs:jade"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "JJJ",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "item": "bitsandbaubs:jade_pickaxe"
+  },
+  "show_notification": true
+}

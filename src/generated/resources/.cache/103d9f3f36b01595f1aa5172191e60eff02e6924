@@ -1,0 +1,5 @@
+// 1.20.1	2024-05-09T20:57:42.1435996	Registries
+fc9ae8d15e4b73f6ba9d28eb4b42737c316e23c4 data/bitsandbaubs/forge/biome_modifier/add_jade_ore.json
+d38ef11385fb41b9375bda4b012876487d333e77 data/bitsandbaubs/worldgen/configured_feature/corrupted_tree.json
+d09bae843366bfc83dd7f8ea8c6e7852724ee20c data/bitsandbaubs/worldgen/configured_feature/jade_ore.json
+c1dfc68c383ccb8365b9f75cb88a548bc7e7f889 data/bitsandbaubs/worldgen/placed_feature/jade_ore_placed.json

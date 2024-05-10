@@ -1,0 +1,59 @@
+{
+  "item.bitsandbaubs.jade": "Jade",
+  "block.bitsandbaubs.jade_ore": "Jade Ore",
+  "block.bitsandbaubs.deepslate_jade_ore": "Deepslate Jade Ore",
+
+  "item.bitsandbaubs.jade_pickaxe": "Jade Pickaxe",
+  "item.bitsandbaubs.jade_axe": "Jade Axe",
+  "item.bitsandbaubs.jade_shovel": "Jade Shovel",
+  "item.bitsandbaubs.jade_sword": "Jade Sword",
+  "item.bitsandbaubs.jade_hoe": "Jade Hoe",
+
+  "item.bitsandbaubs.jade_oak_staff": "Jade Oak Staff",
+
+  "item.bitsandbaubs.raw_platinum": "Raw Platinum",
+  "item.bitsandbaubs.platinum_ingot": "Platinum Ingot",
+  "item.bitsandbaubs.platinum_nugget": "Platinum Nugget",
+
+  "item.bitsandbaubs.platinum_pickaxe": "Platinum Pickaxe",
+  "item.bitsandbaubs.platinum_axe": "Platinum Axe",
+  "item.bitsandbaubs.platinum_shovel": "Platinum Shovel",
+  "item.bitsandbaubs.platinum_sword": "Platinum Sword",
+  "item.bitsandbaubs.platinum_hoe": "Platinum Hoe",
+
+  "item.bitsandbaubs.platinum_helmet": "Platinum Helmet",
+  "item.bitsandbaubs.platinum_chestplate": "Platinum ChestPlate",
+  "item.bitsandbaubs.platinum_leggings": "Platinum Leggings",
+  "item.bitsandbaubs.platinum_boots": "Platinum Boots",
+
+  "item.bitsandbaubs.terracotta_golem_spawn_egg": "Terracotta Golem Spawn Egg",
+
+  "item.bitsandbaubs.propeller": "Propeller",
+  "item.bitsandbaubs.engine": "Engine",
+  "item.bitsandbaubs.air_balloon": "Air Balloon",
+  "item.bitsandbaubs.oak_air_ship": "Oak Air Ship",
+
+  "block.bitsandbaubs.platinum_block": "Block of Platinum",
+  "block.bitsandbaubs.raw_platinum_block": "Block of Raw Platinum",
+
+  "block.bitsandbaubs.alchemy_table": "Alchemy Table",
+
+  "block.bitsandbaubs.corrupted_sapling": "Corrupted Sapling",
+
+  "block.bitsandbaubs.corrupted_log": "Corrupted Log",
+  "block.bitsandbaubs.corrupted_wood": "Corrupted Wood",
+  "block.bitsandbaubs.stripped_corrupted_log": "Stripped Corrupted Log",
+  "block.bitsandbaubs.stripped_corrupted_wood": "Stripped Corrupted Wood",
+  "block.bitsandbaubs.corrupted_planks": "Corrupted Planks",
+  "block.bitsandbaubs.corrupted_leaves": "Corrupted Leaves",
+
+  "block.bitsandbaubs.corrupted_stairs": "Corrupted Stairs",
+  "block.bitsandbaubs.corrupted_slab": "Corrupted Slab",
+  "block.bitsandbaubs.corrupted_button": "Corrupted Button",
+  "block.bitsandbaubs.corrupted_pressure_plate": "Corrupted Pressure Plate",
+  "block.bitsandbaubs.corrupted_fence_gate": "Corrupted Fence Gate",
+  "block.bitsandbaubs.corrupted_fence": "Corrupted Fence",
+  "block.bitsandbaubs.corrupted_door": "Corrupted Door",
+
+  "creativetab.bits_and_baubs_tab": "Bits and Baubs"
+}

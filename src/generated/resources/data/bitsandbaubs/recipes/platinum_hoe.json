@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "bitsandbaubs:platinum_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "PP ",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "item": "bitsandbaubs:platinum_hoe"
+  },
+  "show_notification": true
+}

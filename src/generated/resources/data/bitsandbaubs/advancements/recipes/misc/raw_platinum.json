@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_platinum_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bitsandbaubs:raw_platinum_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bitsandbaubs:raw_platinum"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_raw_platinum_block",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bitsandbaubs:raw_platinum"
+    ]
+  },
+  "sends_telemetry_event": false
+}

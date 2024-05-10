@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "bitsandbaubs:block/corrupted_planks"
+  }
+}

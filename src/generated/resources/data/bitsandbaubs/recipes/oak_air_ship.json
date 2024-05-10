@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "bitsandbaubs:air_balloon"
+    },
+    "B": {
+      "item": "minecraft:oak_boat"
+    },
+    "E": {
+      "item": "bitsandbaubs:engine"
+    },
+    "L": {
+      "item": "minecraft:lead"
+    }
+  },
+  "pattern": [
+    "EAE",
+    "LBL",
+    "   "
+  ],
+  "result": {
+    "item": "bitsandbaubs:oak_air_ship"
+  },
+  "show_notification": true
+}

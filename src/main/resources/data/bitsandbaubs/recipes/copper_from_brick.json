@@ -1,0 +1,12 @@
+{
+  "type": "bitsandbaubs:alchemy",
+  "ingredients": [
+    {
+      "item": "minecraft:brick"
+    }
+  ],
+  "output": {
+    "count": 1,
+    "item": "minecraft:copper_ingot"
+  }
+}

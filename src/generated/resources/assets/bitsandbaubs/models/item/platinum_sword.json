@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "bitsandbaubs:item/platinum_sword"
+  }
+}

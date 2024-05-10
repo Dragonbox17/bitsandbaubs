@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_air_balloon": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bitsandbaubs:air_balloon"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bitsandbaubs:oak_air_ship"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_air_balloon",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bitsandbaubs:oak_air_ship"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,5 @@
+// 1.20.1	2024-05-02T18:17:33.1976836	Global Loot Modifiers : bitsandbaubs
+10b86d0b3a83ad28cfe7217a3f44ee3d33fcc843 data/bitsandbaubs/loot_modifiers/platinum_nugget_from_nether_gold_ore.json
+bc6c99c4879db73c67f369818f92821eee404434 data/bitsandbaubs/loot_modifiers/raw_platinum_from_deepslate_gold_ore.json
+3a5255b6cc137ff325ba342ac84821f437362864 data/bitsandbaubs/loot_modifiers/raw_platinum_from_gold_ore.json
+45d8f9533c0c8315df9d8f71b3ed4da8291b9f1d data/forge/loot_modifiers/global_loot_modifiers.json

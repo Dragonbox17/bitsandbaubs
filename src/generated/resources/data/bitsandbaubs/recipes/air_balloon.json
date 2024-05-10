@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "W": {
+      "item": "minecraft:white_wool"
+    }
+  },
+  "pattern": [
+    "WMW",
+    "M M",
+    "WMW"
+  ],
+  "result": {
+    "item": "bitsandbaubs:air_balloon"
+  },
+  "show_notification": true
+}
