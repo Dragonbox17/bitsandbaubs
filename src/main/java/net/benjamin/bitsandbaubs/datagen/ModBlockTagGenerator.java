@@ -22,11 +22,13 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider pProvider) {
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.PLATINUM_BLOCK.get(), ModBlocks.RAW_PLATINUM_BLOCK.get(), ModBlocks.ALCHEMY_TABLE.get()
-                        , ModBlocks.JADE_ORE.get(), ModBlocks.DEEPSLATE_JADE_ORE.get(), ModBlocks.JADE_BLOCK.get());
+                        , ModBlocks.JADE_ORE.get(), ModBlocks.DEEPSLATE_JADE_ORE.get(), ModBlocks.JADE_BLOCK.get(),
+                        ModBlocks.JADE_BRICKS.get());
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.PLATINUM_BLOCK.get(), ModBlocks.RAW_PLATINUM_BLOCK.get(), ModBlocks.ALCHEMY_TABLE.get()
-                        , ModBlocks.JADE_ORE.get(), ModBlocks.DEEPSLATE_JADE_ORE.get(), ModBlocks.JADE_BLOCK.get());
+                        , ModBlocks.JADE_ORE.get(), ModBlocks.DEEPSLATE_JADE_ORE.get(), ModBlocks.JADE_BLOCK.get(),
+                        ModBlocks.JADE_BRICKS.get());
 
         this.tag(BlockTags.LOGS_THAT_BURN)
                 .add(ModBlocks.CORRUPTED_LOG.get())

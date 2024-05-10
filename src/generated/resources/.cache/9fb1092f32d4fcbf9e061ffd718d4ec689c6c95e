@@ -1,9 +1,10 @@
-// 1.20.1	2024-05-10T13:00:04.489344	Recipes
+// 1.20.1	2024-05-10T14:10:45.2618459	Recipes
 68c2febec6ecf293b723b23ed3e2d1483290d9b9 data/bitsandbaubs/advancements/recipes/building_blocks/corrupted_planks.json
 68f626b1028d777f1fa2255d51e9a0fd5ac697de data/bitsandbaubs/advancements/recipes/misc/air_balloon.json
 a8cbddd32eb262072a191479dc4a100dadb87a14 data/bitsandbaubs/advancements/recipes/misc/alchemy_table.json
 08bc276704e6e8f463b049b081a71b3f5bad740c data/bitsandbaubs/advancements/recipes/misc/engine.json
 94c4f501634cab8f2f58bd0326f7a7ebe6b33f1d data/bitsandbaubs/advancements/recipes/misc/jade_axe.json
+dd27146b0bc0e60b12b6d5d8af3a6873f9c7710a data/bitsandbaubs/advancements/recipes/misc/jade_block.json
 1b60fe6d21a3093aa35c679b71e438b78bdabb42 data/bitsandbaubs/advancements/recipes/misc/jade_club.json
 2b51a83a92b60d8532b97a44fad8b1dac12720e4 data/bitsandbaubs/advancements/recipes/misc/jade_hoe.json
 cfe0fe322dc3a739be0977db233d04a549cebb82 data/bitsandbaubs/advancements/recipes/misc/jade_oak_staff.json
@@ -27,6 +28,7 @@ d5bd51415f3573b180936964841165d32ca570dd data/bitsandbaubs/advancements/recipes/
 d1c58214acc84d718f37b554d5de466587f51299 data/bitsandbaubs/recipes/corrupted_planks.json
 cbb779293d2ef186e61881a6e01dd4a0e1c328f9 data/bitsandbaubs/recipes/engine.json
 a52464bf5910a230cd8cbcd89b9645aabfcbb4c0 data/bitsandbaubs/recipes/jade_axe.json
+b6a652c6da150e670092944e70174f98ed2717d7 data/bitsandbaubs/recipes/jade_block.json
 114b4caf79c7b42e67842c409592cbaec947759b data/bitsandbaubs/recipes/jade_club.json
 8c824498bc444f78155a8dc71b2040b9ecb8f284 data/bitsandbaubs/recipes/jade_hoe.json
 01efb73b1e8ec9c74008b1690578e83329a3f40b data/bitsandbaubs/recipes/jade_oak_staff.json

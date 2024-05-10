@@ -46,7 +46,10 @@ public class ModBlocks {
             registerBlock("deepslate_jade_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).requiresCorrectToolForDrops(), UniformInt.of(3, 6)));
 
     public static final RegistryObject<Block> JADE_BLOCK =
-            registerBlock("jade_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_GOLD_BLOCK)));
+            registerBlock("jade_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK)));
+
+    public static final RegistryObject<Block> JADE_BRICKS =
+            registerBlock("jade_bricks", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK).strength(40)));
 
 
     public static final RegistryObject<Block> CORRUPTED_SAPLING =

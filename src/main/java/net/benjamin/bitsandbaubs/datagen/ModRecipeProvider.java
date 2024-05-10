@@ -11,6 +11,7 @@ import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
+import net.minecraft.world.item.crafting.StonecutterRecipe;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -216,6 +217,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('J', ModItems.JADE.get())
                 .unlockedBy(getHasName(ModItems.JADE.get()), has(ModItems.JADE.get()))
                 .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.JADE_BRICKS.get())
+                .pattern("JJ ")
+                .pattern("JJ ")
+                .pattern("   ")
+                .unlockedBy(getHasName(ModBlocks.JADE_BLOCK.get()), has(ModBlocks.JADE_BLOCK.get()))
+                .save(pRecipeOutput);
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pRecipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup) {
@@ -235,5 +243,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         }
 
     }
+
+
 
 }

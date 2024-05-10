@@ -94,7 +94,7 @@ public class ModItems {
                     () -> new HoeItem(ModToolTiers.JADE, 0, 1, new Item.Properties()));
 
     public static final RegistryObject<Item> JADE_OAK_STAFF =
-            ITEMS.register("jade_oak_staff", () -> new JadeStaffItem(new Item.Properties().stacksTo(1)));
+            ITEMS.register("jade_oak_staff", () -> new JadeStaffItem(new Item.Properties().stacksTo(1).defaultDurability(324)));
 
 
     public static void register(IEventBus eventBus) {

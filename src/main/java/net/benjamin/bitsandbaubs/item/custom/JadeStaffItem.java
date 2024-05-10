@@ -14,10 +14,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.monster.CrossbowAttackMob;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.*;
-import net.minecraft.world.item.ArrowItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.enchantment.Enchantments;
@@ -28,7 +25,7 @@ import org.joml.Vector3f;
 
 import java.util.List;
 
-public class JadeStaffItem extends Item {
+public class JadeStaffItem extends Item implements Vanishable {
     private int useTime = 30;
 
     public JadeStaffItem(Properties p_41383_) {
@@ -41,6 +38,10 @@ public class JadeStaffItem extends Item {
             shootProjectile(pLevel, pPlayer, 10, 5F, 5F, 0);
 
             useTime = 0;
+
+            pPlayer.getItemInHand(pHand).hurtAndBreak(1, pPlayer, (pItem) -> {
+                pItem.broadcastBreakEvent(pHand);
+            });
 
             return InteractionResultHolder.success(pPlayer.getItemInHand(pHand));
         }

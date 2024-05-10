@@ -56,7 +56,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createOreDrop(ModBlocks.DEEPSLATE_JADE_ORE.get(), ModItems.JADE.get()));
 
         this.dropSelf(ModBlocks.JADE_BLOCK.get());
-
+        this.dropSelf(ModBlocks.JADE_BRICKS.get());
     }
 
     @Override
