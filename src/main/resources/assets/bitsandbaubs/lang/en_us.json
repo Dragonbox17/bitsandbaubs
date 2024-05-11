@@ -62,6 +62,10 @@
   "block.bitsandbaubs.corrupted_fence_gate": "Corrupted Fence Gate",
   "block.bitsandbaubs.corrupted_fence": "Corrupted Fence",
   "block.bitsandbaubs.corrupted_door": "Corrupted Door",
+  "block.bitsandbaubs.corrupted_sign": "Corrupted Sign",
+  "block.bitsandbaubs.corrupted_hanging": "Corrupted Hanging Sign",
+
+  "block.bitsandbaubs.shoji": "Shoji",
 
   "creativetab.bits_and_baubs_tab": "Bits and Baubs"
 }

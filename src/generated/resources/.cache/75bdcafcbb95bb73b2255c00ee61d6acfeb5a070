@@ -1,11 +1,13 @@
-// 1.20.1	2024-05-10T18:21:14.0765734	Item Models: bitsandbaubs
+// 1.20.1	2024-05-11T12:17:34.048482	Item Models: bitsandbaubs
 b6d3b2e7f50b0f85cab97d7012c27f0ca2fc4636 assets/bitsandbaubs/models/item/air_balloon.json
 310eb885732e2060b07a8e50e5fbe890fa97993e assets/bitsandbaubs/models/item/corrupted_button.json
 b4ec89d14b07908efb3d5fc59511e0193a4302bd assets/bitsandbaubs/models/item/corrupted_door.json
 4b746bc4caf30e297e9c17ca2a6042993335d798 assets/bitsandbaubs/models/item/corrupted_fence.json
 d78c1418a84aef7a5e65ada599c01fd8fcff7ebe assets/bitsandbaubs/models/item/corrupted_fence_gate.json
+1beb53364f21ee53e2c31ef9d3f25639b23a0c5a assets/bitsandbaubs/models/item/corrupted_hanging_sign.json
 fa124d3124d59f494582e63b5bec94d0e76d186b assets/bitsandbaubs/models/item/corrupted_pressure_plate.json
 f311d43aa5e8ddbe4017d125a1cac520fbabe6ee assets/bitsandbaubs/models/item/corrupted_sapling.json
+24fc02d450ddef8ca78ec835c5bddcdf45e3526f assets/bitsandbaubs/models/item/corrupted_sign.json
 282f5f8dba231bfc4f7911958e2ff2507adfd2d3 assets/bitsandbaubs/models/item/corrupted_slab.json
 e8bcab910ad0cf7e68e0d66e3d4e2618c5d6f3a9 assets/bitsandbaubs/models/item/corrupted_stairs.json
 d831e11ffb8879096eaa8b36beca6f3561a545f3 assets/bitsandbaubs/models/item/corrupted_trapdoor.json

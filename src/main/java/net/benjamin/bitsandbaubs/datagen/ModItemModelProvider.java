@@ -139,6 +139,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         fenceItem(ModBlocks.CORRUPTED_FENCE, ModBlocks.CORRUPTED_PLANKS);
 
         trapdoorItem(ModBlocks.CORRUPTED_TRAPDOOR);
+
+        simpleItem(ModItems.CORRUPTED_SIGN);
+        simpleItem(ModItems.CORRUPTED_HANGING_SIGN);
     }
 
     private ItemModelBuilder handheldItem(RegistryObject<Item> item) {

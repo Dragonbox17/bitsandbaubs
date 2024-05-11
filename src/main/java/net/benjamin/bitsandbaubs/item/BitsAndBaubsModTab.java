@@ -81,6 +81,8 @@ public class BitsAndBaubsModTab {
                 pOutput.accept(ModBlocks.CORRUPTED_FENCE_GATE.get());
                 pOutput.accept(ModBlocks.CORRUPTED_DOOR.get());
                 pOutput.accept(ModBlocks.CORRUPTED_TRAPDOOR.get());
+                pOutput.accept(ModItems.CORRUPTED_SIGN.get());
+                pOutput.accept(ModItems.CORRUPTED_HANGING_SIGN.get());
                 pOutput.accept(ModBlocks.CORRUPTED_LEAVES.get());
 
                 pOutput.accept(ModItems.PROPELLER.get());
@@ -89,6 +91,7 @@ public class BitsAndBaubsModTab {
                 pOutput.accept(ModItems.OAK_AIR_SHIP.get());
 
                 pOutput.accept(ModItems.TERRACOTTA_GOLEM_SPAWN_EGG.get());
+                pOutput.accept(ModBlocks.SHOJI.get());
             })
             .build());
 

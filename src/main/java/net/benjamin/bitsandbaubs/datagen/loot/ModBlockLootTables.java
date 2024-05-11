@@ -50,6 +50,15 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.CORRUPTED_DOOR.get(),
                 block -> createDoorTable(ModBlocks.CORRUPTED_DOOR.get()));
 
+        this.add(ModBlocks.CORRUPTED_SIGN.get(),
+                block -> createSingleItemTable(ModItems.CORRUPTED_SIGN.get()));
+        this.add(ModBlocks.CORRUPTED_WALL_SIGN.get(),
+                block -> createSingleItemTable(ModItems.CORRUPTED_SIGN.get()));
+        this.add(ModBlocks.CORRUPTED_HANGING_SIGN.get(),
+                block -> createSingleItemTable(ModItems.CORRUPTED_HANGING_SIGN.get()));
+        this.add(ModBlocks.CORRUPTED_WALL_HANGING_SIGN.get(),
+                block -> createSingleItemTable(ModItems.CORRUPTED_HANGING_SIGN.get()));
+
         this.add(ModBlocks.JADE_ORE.get(),
                 block -> createOreDrop(ModBlocks.JADE_ORE.get(), ModItems.JADE.get()));
         this.add(ModBlocks.DEEPSLATE_JADE_ORE.get(),
@@ -65,6 +74,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createSlabItemTable(ModBlocks.JADE_BRICK_SLAB.get()));
         this.dropSelf(ModBlocks.JADE_WALL.get());
         this.dropSelf(ModBlocks.JADE_BRICK_WALL.get());
+
+        this.dropSelf(ModBlocks.SHOJI.get());
     }
 
     @Override

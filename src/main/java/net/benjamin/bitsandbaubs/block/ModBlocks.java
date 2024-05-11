@@ -2,9 +2,9 @@ package net.benjamin.bitsandbaubs.block;
 
 import net.benjamin.bitsandbaubs.BitsAndBaubs;
 
-import net.benjamin.bitsandbaubs.block.custom.AlchemyTableBlock;
-import net.benjamin.bitsandbaubs.block.custom.ModFlammableRotatedPillarBlock;
+import net.benjamin.bitsandbaubs.block.custom.*;
 import net.benjamin.bitsandbaubs.item.ModItems;
+import net.benjamin.bitsandbaubs.util.ModWoodTypes;
 import net.benjamin.bitsandbaubs.worldgen.tree.CorruptedTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -264,6 +264,21 @@ public class ModBlocks {
                     return 5;
                 }
             });
+
+    public static final RegistryObject<Block> CORRUPTED_SIGN = BLOCKS.register("corrupted_sign",
+            () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.CORRUPTED));
+
+    public static final RegistryObject<Block> CORRUPTED_WALL_SIGN = BLOCKS.register("corrupted_wall_sign",
+            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.CORRUPTED));
+
+    public static final RegistryObject<Block> CORRUPTED_HANGING_SIGN = BLOCKS.register("corrupted_hanging_sign",
+            () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.CORRUPTED));
+
+    public static final RegistryObject<Block> CORRUPTED_WALL_HANGING_SIGN = BLOCKS.register("corrupted_wall_hanging_sign",
+            () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.CORRUPTED));
+
+    public static final RegistryObject<Block> SHOJI =
+            registerBlock("shoji", () -> new ModFlammableGlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).sound(SoundType.WOOL)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

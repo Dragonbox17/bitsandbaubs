@@ -1,6 +1,7 @@
 package net.benjamin.bitsandbaubs.item;
 
 import net.benjamin.bitsandbaubs.BitsAndBaubs;
+import net.benjamin.bitsandbaubs.block.ModBlocks;
 import net.benjamin.bitsandbaubs.entity.ModEntities;
 import net.benjamin.bitsandbaubs.entity.custom.AirShipEntity;
 import net.benjamin.bitsandbaubs.item.custom.JadeStaffItem;
@@ -96,6 +97,13 @@ public class ModItems {
     public static final RegistryObject<Item> JADE_OAK_STAFF =
             ITEMS.register("jade_oak_staff", () -> new JadeStaffItem(new Item.Properties().stacksTo(1).defaultDurability(324)));
 
+    public static final RegistryObject<Item> CORRUPTED_SIGN =
+            ITEMS.register("corrupted_sign", () -> new SignItem(new Item.Properties().stacksTo(16)
+                    , ModBlocks.CORRUPTED_SIGN.get(), ModBlocks.CORRUPTED_WALL_SIGN.get()));
+
+    public static final RegistryObject<Item> CORRUPTED_HANGING_SIGN =
+            ITEMS.register("corrupted_hanging_sign", () -> new HangingSignItem(ModBlocks.CORRUPTED_HANGING_SIGN.get()
+                    , ModBlocks.CORRUPTED_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

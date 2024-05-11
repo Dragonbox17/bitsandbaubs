@@ -218,6 +218,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.JADE.get()), has(ModItems.JADE.get()))
                 .save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SHOJI.get(), 4)
+                .pattern("BPB")
+                .pattern("PBP")
+                .pattern("BPB")
+                .define('B', Items.BAMBOO)
+                .define('P', Items.PAPER)
+                .unlockedBy(getHasName(Items.PAPER), has(Items.PAPER))
+                .save(pRecipeOutput);
+
         stonecuttingRecipe(pRecipeOutput, RecipeCategory.MISC, ModBlocks.JADE_BLOCK.get(), ModBlocks.JADE_BRICKS.get());
         stonecuttingRecipe(pRecipeOutput, RecipeCategory.MISC, ModBlocks.JADE_BLOCK.get(), ModBlocks.JADE_STAIRS.get());
         stonecuttingRecipe(pRecipeOutput, RecipeCategory.MISC, ModBlocks.JADE_BLOCK.get(), ModBlocks.JADE_BRICK_STAIRS.get());

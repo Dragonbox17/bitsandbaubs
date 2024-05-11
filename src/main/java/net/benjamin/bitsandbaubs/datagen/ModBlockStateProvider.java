@@ -67,6 +67,29 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         doorBlockWithRenderType(((DoorBlock) ModBlocks.CORRUPTED_DOOR.get()), modLoc("block/corrupted_door_bottom"), modLoc("block/corrupted_door_top"), "cutout");
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.CORRUPTED_TRAPDOOR.get()), modLoc("block/corrupted_trapdoor"), true, "cutout");
+
+        signBlock((StandingSignBlock) ModBlocks.CORRUPTED_SIGN.get(), (WallSignBlock) ModBlocks.CORRUPTED_WALL_SIGN.get(), blockTexture(ModBlocks.CORRUPTED_PLANKS.get()));
+        hangingSignBlock(ModBlocks.CORRUPTED_HANGING_SIGN.get(), ModBlocks.CORRUPTED_WALL_HANGING_SIGN.get(), blockTexture(ModBlocks.CORRUPTED_PLANKS.get()));
+
+        blockWithItem(ModBlocks.SHOJI);
+    }
+
+    public void hangingSignBlock(Block signBlock, Block wallSignBlock, ResourceLocation texture) {
+        ModelFile sign = models().sign(name(signBlock), texture);
+        hangingSignBlock(signBlock, wallSignBlock, sign);
+    }
+
+    public void hangingSignBlock(Block signBlock, Block wallSignBlock, ModelFile sign) {
+        simpleBlock(signBlock, sign);
+        simpleBlock(wallSignBlock, sign);
+    }
+
+    private String name(Block block) {
+        return key(block).getPath();
+    }
+
+    private ResourceLocation key(Block block) {
+        return ForgeRegistries.BLOCKS.getKey(block);
     }
 
     private void saplingBlock(RegistryObject<Block> blockRegistryObject) {

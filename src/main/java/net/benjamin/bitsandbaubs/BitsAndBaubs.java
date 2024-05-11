@@ -12,7 +12,9 @@ import net.benjamin.bitsandbaubs.loot.ModLootModifiers;
 import net.benjamin.bitsandbaubs.recipe.ModRecipes;
 import net.benjamin.bitsandbaubs.screen.AlchemyTableScreen;
 import net.benjamin.bitsandbaubs.screen.ModMenuTypes;
+import net.benjamin.bitsandbaubs.util.ModWoodTypes;
 import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -88,6 +90,8 @@ public class BitsAndBaubs
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+            Sheets.addWoodType(ModWoodTypes.CORRUPTED);
+
             EntityRenderers.register(ModEntities.TERRACOTTA_GOLEM.get(), TerracottaGolemRenderer::new);
             EntityRenderers.register(ModEntities.AIR_SHIP.get(), p_174010_ -> new AirShipRenderer(p_174010_));
 

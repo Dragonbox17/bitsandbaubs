@@ -1,4 +1,4 @@
-// 1.20.1	2024-05-10T18:10:53.0463772	Recipes
+// 1.20.1	2024-05-10T18:57:26.8318406	Recipes
 68c2febec6ecf293b723b23ed3e2d1483290d9b9 data/bitsandbaubs/advancements/recipes/building_blocks/corrupted_planks.json
 68f626b1028d777f1fa2255d51e9a0fd5ac697de data/bitsandbaubs/advancements/recipes/misc/air_balloon.json
 a8cbddd32eb262072a191479dc4a100dadb87a14 data/bitsandbaubs/advancements/recipes/misc/alchemy_table.json
@@ -23,6 +23,7 @@ c0d5efef22ac0704315c6128cd7a569669378184 data/bitsandbaubs/advancements/recipes/
 18738abeff0c596b53e8052b7d9229228efbf84a data/bitsandbaubs/advancements/recipes/misc/propeller.json
 8f82d8b8cf22f3dc520322654b869b87b525ccaf data/bitsandbaubs/advancements/recipes/misc/raw_platinum.json
 d5bd51415f3573b180936964841165d32ca570dd data/bitsandbaubs/advancements/recipes/misc/raw_platinum_block.json
+c9e24c0c792fc0765d509ba06b44e383341cfd7f data/bitsandbaubs/advancements/recipes/misc/shoji.json
 2564895103640e5cb065153bfcfb2526fe337ff8 data/bitsandbaubs/recipes/air_balloon.json
 05065f50f5ce611a32dcb1e20bc8d36bd95e9ae6 data/bitsandbaubs/recipes/alchemy_table.json
 d1c58214acc84d718f37b554d5de466587f51299 data/bitsandbaubs/recipes/corrupted_planks.json
@@ -47,6 +48,7 @@ c552f7cba6fcc6925947ec0ca219c0a568f90186 data/bitsandbaubs/recipes/platinum_hoe.
 610e70a6ad8f93f7e185c410a52633ca92ab93f4 data/bitsandbaubs/recipes/propeller.json
 e95be5ee0c384f74a147aafcb1897301a1a66b91 data/bitsandbaubs/recipes/raw_platinum.json
 85dec547fdae2a56d1f9ccdb383b18f1baee6be6 data/bitsandbaubs/recipes/raw_platinum_block.json
+d86e10825ab3eccb5f5be21f3afc79d7fc7d2767 data/bitsandbaubs/recipes/shoji.json
 7b09e3d15f2f83b74645e7bed9493ed23804b4f9 data/minecraft/advancements/recipes/misc/jade_bricks_from_jade_block_stonecutting.json
 6e080c7365b1b23d003af4e0b7c1526f02885183 data/minecraft/advancements/recipes/misc/jade_brick_slab_from_jade_block_stonecutting.json
 41faf5ffa0fac9697e88a875005aa5b50a933456 data/minecraft/advancements/recipes/misc/jade_brick_slab_from_jade_bricks_stonecutting.json
