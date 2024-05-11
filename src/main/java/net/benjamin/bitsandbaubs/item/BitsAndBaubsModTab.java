@@ -22,7 +22,15 @@ public class BitsAndBaubsModTab {
                 pOutput.accept(ModItems.JADE.get());
                 pOutput.accept(ModBlocks.JADE_ORE.get());
                 pOutput.accept(ModBlocks.DEEPSLATE_JADE_ORE.get());
+
                 pOutput.accept(ModBlocks.JADE_BLOCK.get());
+                pOutput.accept(ModBlocks.JADE_BRICKS.get());
+                pOutput.accept(ModBlocks.JADE_STAIRS.get());
+                pOutput.accept(ModBlocks.JADE_BRICK_STAIRS.get());
+                pOutput.accept(ModBlocks.JADE_SLAB.get());
+                pOutput.accept(ModBlocks.JADE_BRICK_SLAB.get());
+                pOutput.accept(ModBlocks.JADE_WALL.get());
+                pOutput.accept(ModBlocks.JADE_BRICK_WALL.get());
 
                 pOutput.accept(ModItems.JADE_PICKAXE.get());
                 pOutput.accept(ModItems.JADE_AXE.get());

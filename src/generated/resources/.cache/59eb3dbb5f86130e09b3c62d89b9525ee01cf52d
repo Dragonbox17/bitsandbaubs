@@ -1,4 +1,4 @@
-// 1.20.1	2024-05-10T14:10:45.2598523	Loot Tables
+// 1.20.1	2024-05-10T18:10:53.0443807	Loot Tables
 f63caca113388f7307f7d43ab05d0c7c375de34c data/bitsandbaubs/loot_tables/blocks/alchemy_table.json
 747b8f945a6f838f26b8f05b6d53cee2f55efd6d data/bitsandbaubs/loot_tables/blocks/corrupted_button.json
 5e4603d5bc02e8596228164bb3bb571fd4c2ee73 data/bitsandbaubs/loot_tables/blocks/corrupted_door.json
@@ -15,7 +15,14 @@ a79a4b7bffc4d27b006840a7c387148ebda1114d data/bitsandbaubs/loot_tables/blocks/co
 ff02ed4ec71359ccfe20f5535de418d900faae53 data/bitsandbaubs/loot_tables/blocks/corrupted_wood.json
 094bc43ba1358199770289e997fbda59d5762351 data/bitsandbaubs/loot_tables/blocks/deepslate_jade_ore.json
 065e0591264338b0dea5160371fbb4f543fb76af data/bitsandbaubs/loot_tables/blocks/jade_block.json
+4478d269390d0fa5b3212671284f3eff605ebf98 data/bitsandbaubs/loot_tables/blocks/jade_bricks.json
+131df92b9b286762fa88beb1068615baeec52f1c data/bitsandbaubs/loot_tables/blocks/jade_brick_slab.json
+ab8cb8dcd2d28066ecd38394d32bce59c5f89188 data/bitsandbaubs/loot_tables/blocks/jade_brick_stairs.json
+b9cbe06d479dcdcc650c7646f6aa5326e56468a6 data/bitsandbaubs/loot_tables/blocks/jade_brick_wall.json
 b595dfd908cc669ad7aa782e3c2b10873df36f82 data/bitsandbaubs/loot_tables/blocks/jade_ore.json
+b1ba54dec732097cfbb82983e48b98e91db886c8 data/bitsandbaubs/loot_tables/blocks/jade_slab.json
+673ac9404bf6a53d7a3d9a668ced115c7a32acb3 data/bitsandbaubs/loot_tables/blocks/jade_stairs.json
+eb6b088e3a0d3a26b648fe97fd66b5b3f9d7140d data/bitsandbaubs/loot_tables/blocks/jade_wall.json
 86536b8273ab1037e254313d93ca29d4c2e1d330 data/bitsandbaubs/loot_tables/blocks/platinum_block.json
 0b1b0d94f7d2aa7c267005226a1ca10554cb720f data/bitsandbaubs/loot_tables/blocks/raw_platinum_block.json
 c405a767df6b1b735cea815f76434fde1c646ee3 data/bitsandbaubs/loot_tables/blocks/stripped_corrupted_log.json

@@ -26,6 +26,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlocks.JADE_BLOCK);
         blockWithItem(ModBlocks.JADE_BRICKS);
+        stairsBlock(((StairBlock) ModBlocks.JADE_STAIRS.get()), blockTexture(ModBlocks.JADE_BLOCK.get()));
+        stairsBlock(((StairBlock) ModBlocks.JADE_BRICK_STAIRS.get()), blockTexture(ModBlocks.JADE_BRICKS.get()));
+        slabBlock(((SlabBlock) ModBlocks.JADE_SLAB.get()), blockTexture(ModBlocks.JADE_BLOCK.get()), blockTexture(ModBlocks.JADE_BLOCK.get()));
+        slabBlock(((SlabBlock) ModBlocks.JADE_BRICK_SLAB.get()), blockTexture(ModBlocks.JADE_BRICKS.get()), blockTexture(ModBlocks.JADE_BRICKS.get()));
+        wallBlock(((WallBlock) ModBlocks.JADE_WALL.get()), "jade_wall", blockTexture(ModBlocks.JADE_BLOCK.get()));
+        wallBlock(((WallBlock) ModBlocks.JADE_BRICK_WALL.get()), "jade_brick_wall", blockTexture(ModBlocks.JADE_BRICKS.get()));
 
         simpleBlockWithItem(ModBlocks.ALCHEMY_TABLE.get(),
                 new ModelFile.UncheckedModelFile(modLoc("block/alchemy_table")));

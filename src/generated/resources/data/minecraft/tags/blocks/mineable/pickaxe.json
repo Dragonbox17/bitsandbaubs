@@ -5,6 +5,13 @@
     "bitsandbaubs:alchemy_table",
     "bitsandbaubs:jade_ore",
     "bitsandbaubs:deepslate_jade_ore",
-    "bitsandbaubs:jade_block"
+    "bitsandbaubs:jade_block",
+    "bitsandbaubs:jade_bricks",
+    "bitsandbaubs:jade_slab",
+    "bitsandbaubs:jade_brick_slab",
+    "bitsandbaubs:jade_stairs",
+    "bitsandbaubs:jade_brick_stairs",
+    "bitsandbaubs:jade_wall",
+    "bitsandbaubs:jade_brick_wall"
   ]
 }

@@ -57,6 +57,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.dropSelf(ModBlocks.JADE_BLOCK.get());
         this.dropSelf(ModBlocks.JADE_BRICKS.get());
+        this.dropSelf(ModBlocks.JADE_STAIRS.get());
+        this.dropSelf(ModBlocks.JADE_BRICK_STAIRS.get());
+        this.add(ModBlocks.JADE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.JADE_SLAB.get()));
+        this.add(ModBlocks.JADE_BRICK_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.JADE_BRICK_SLAB.get()));
+        this.dropSelf(ModBlocks.JADE_WALL.get());
+        this.dropSelf(ModBlocks.JADE_BRICK_WALL.get());
     }
 
     @Override

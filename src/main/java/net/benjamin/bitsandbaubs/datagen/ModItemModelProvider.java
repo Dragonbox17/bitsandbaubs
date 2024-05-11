@@ -90,6 +90,12 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         simpleItem(ModItems.JADE);
+        evenSimplerBlockItem(ModBlocks.JADE_STAIRS);
+        evenSimplerBlockItem(ModBlocks.JADE_BRICK_STAIRS);
+        evenSimplerBlockItem(ModBlocks.JADE_SLAB);
+        evenSimplerBlockItem(ModBlocks.JADE_BRICK_SLAB);
+        wallItem(ModBlocks.JADE_WALL, ModBlocks.JADE_BLOCK);
+        wallItem(ModBlocks.JADE_BRICK_WALL, ModBlocks.JADE_BRICKS);
 
         handheldItem(ModItems.JADE_PICKAXE);
         handheldItem(ModItems.JADE_AXE);
@@ -166,6 +172,11 @@ public class ModItemModelProvider extends ItemModelProvider {
     public void fenceItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
         this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/fence_inventory"))
                 .texture("texture",  new ResourceLocation(BitsAndBaubs.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+    }
+
+    public void wallItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/wall_inventory"))
+                .texture("wall",  new ResourceLocation(BitsAndBaubs.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
     }
 
     private ItemModelBuilder simpleBlockItem(RegistryObject<Block> item) {

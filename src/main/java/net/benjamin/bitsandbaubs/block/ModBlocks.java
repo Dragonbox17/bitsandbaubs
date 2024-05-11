@@ -51,6 +51,25 @@ public class ModBlocks {
     public static final RegistryObject<Block> JADE_BRICKS =
             registerBlock("jade_bricks", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK).strength(40)));
 
+    public static final RegistryObject<Block> JADE_STAIRS = registerBlock("jade_stairs",
+            () -> new StairBlock(() -> ModBlocks.JADE_BLOCK.get().defaultBlockState() ,
+                    BlockBehaviour.Properties.copy(Blocks.STONE_STAIRS).strength(40)));
+
+    public static final RegistryObject<Block> JADE_BRICK_STAIRS = registerBlock("jade_brick_stairs",
+            () -> new StairBlock(() -> ModBlocks.JADE_BLOCK.get().defaultBlockState() ,
+                    BlockBehaviour.Properties.copy(Blocks.STONE_STAIRS).strength(40)));
+
+    public static final RegistryObject<Block> JADE_SLAB =
+            registerBlock("jade_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_SLAB).strength(40)));
+
+    public static final RegistryObject<Block> JADE_BRICK_SLAB =
+            registerBlock("jade_brick_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_SLAB).strength(40)));
+
+    public static final RegistryObject<Block> JADE_WALL =
+            registerBlock("jade_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_WALL).strength(40)));
+
+    public static final RegistryObject<Block> JADE_BRICK_WALL =
+            registerBlock("jade_brick_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_WALL).strength(40)));
 
     public static final RegistryObject<Block> CORRUPTED_SAPLING =
             registerBlock("corrupted_sapling", () -> new SaplingBlock(new CorruptedTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));

@@ -22,13 +22,17 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider pProvider) {
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.PLATINUM_BLOCK.get(), ModBlocks.RAW_PLATINUM_BLOCK.get(), ModBlocks.ALCHEMY_TABLE.get()
-                        , ModBlocks.JADE_ORE.get(), ModBlocks.DEEPSLATE_JADE_ORE.get(), ModBlocks.JADE_BLOCK.get(),
-                        ModBlocks.JADE_BRICKS.get());
+                        , ModBlocks.JADE_ORE.get(), ModBlocks.DEEPSLATE_JADE_ORE.get(), ModBlocks.JADE_BLOCK.get()
+                        , ModBlocks.JADE_BRICKS.get(), ModBlocks.JADE_SLAB.get(), ModBlocks.JADE_BRICK_SLAB.get()
+                        , ModBlocks.JADE_STAIRS.get(), ModBlocks.JADE_BRICK_STAIRS.get(), ModBlocks.JADE_WALL.get()
+                        , ModBlocks.JADE_BRICK_WALL.get());
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.PLATINUM_BLOCK.get(), ModBlocks.RAW_PLATINUM_BLOCK.get(), ModBlocks.ALCHEMY_TABLE.get()
                         , ModBlocks.JADE_ORE.get(), ModBlocks.DEEPSLATE_JADE_ORE.get(), ModBlocks.JADE_BLOCK.get(),
-                        ModBlocks.JADE_BRICKS.get());
+                        ModBlocks.JADE_BRICKS.get(), ModBlocks.JADE_SLAB.get(), ModBlocks.JADE_BRICK_SLAB.get()
+                        , ModBlocks.JADE_STAIRS.get(), ModBlocks.JADE_BRICK_STAIRS.get(), ModBlocks.JADE_WALL.get()
+                        , ModBlocks.JADE_BRICK_WALL.get());
 
         this.tag(BlockTags.LOGS_THAT_BURN)
                 .add(ModBlocks.CORRUPTED_LOG.get())
@@ -48,5 +52,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CORRUPTED_FENCE_GATE.get());
         this.tag(BlockTags.TRAPDOORS)
                 .add(ModBlocks.CORRUPTED_TRAPDOOR.get());
+
+        this.tag(BlockTags.WALLS)
+                .add(ModBlocks.JADE_WALL.get())
+                .add(ModBlocks.JADE_BRICK_WALL.get());
     }
 }

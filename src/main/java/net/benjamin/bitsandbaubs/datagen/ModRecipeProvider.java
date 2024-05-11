@@ -218,12 +218,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.JADE.get()), has(ModItems.JADE.get()))
                 .save(pRecipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.JADE_BRICKS.get())
-                .pattern("JJ ")
-                .pattern("JJ ")
-                .pattern("   ")
-                .unlockedBy(getHasName(ModBlocks.JADE_BLOCK.get()), has(ModBlocks.JADE_BLOCK.get()))
-                .save(pRecipeOutput);
+        stonecuttingRecipe(pRecipeOutput, RecipeCategory.MISC, ModBlocks.JADE_BLOCK.get(), ModBlocks.JADE_BRICKS.get());
+        stonecuttingRecipe(pRecipeOutput, RecipeCategory.MISC, ModBlocks.JADE_BLOCK.get(), ModBlocks.JADE_STAIRS.get());
+        stonecuttingRecipe(pRecipeOutput, RecipeCategory.MISC, ModBlocks.JADE_BLOCK.get(), ModBlocks.JADE_BRICK_STAIRS.get());
+        stonecuttingRecipe(pRecipeOutput, RecipeCategory.MISC, ModBlocks.JADE_BLOCK.get(), ModBlocks.JADE_SLAB.get());
+        stonecuttingRecipe(pRecipeOutput, RecipeCategory.MISC, ModBlocks.JADE_BLOCK.get(), ModBlocks.JADE_BRICK_SLAB.get());
+        stonecuttingRecipe(pRecipeOutput, RecipeCategory.MISC, ModBlocks.JADE_BLOCK.get(), ModBlocks.JADE_WALL.get());
+        stonecuttingRecipe(pRecipeOutput, RecipeCategory.MISC, ModBlocks.JADE_BLOCK.get(), ModBlocks.JADE_BRICK_WALL.get());
+
+        stonecuttingRecipe(pRecipeOutput, RecipeCategory.MISC, ModBlocks.JADE_BRICKS.get(), ModBlocks.JADE_BRICK_STAIRS.get());
+        stonecuttingRecipe(pRecipeOutput, RecipeCategory.MISC, ModBlocks.JADE_BRICKS.get(), ModBlocks.JADE_BRICK_SLAB.get());
+        stonecuttingRecipe(pRecipeOutput, RecipeCategory.MISC, ModBlocks.JADE_BRICKS.get(), ModBlocks.JADE_BRICK_WALL.get());
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pRecipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup) {
@@ -244,6 +249,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     }
 
-
-
+    protected static void stonecuttingRecipe(Consumer<FinishedRecipe> pRecipeOutput, RecipeCategory pCategory, ItemLike pResult, ItemLike pIngredient) {
+        stonecutterResultFromBase(pRecipeOutput, pCategory, pIngredient, pResult);
+    }
 }

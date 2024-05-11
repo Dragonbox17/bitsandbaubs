@@ -1,4 +1,4 @@
-// 1.20.1	2024-05-09T18:30:08.985983	Item Models: bitsandbaubs
+// 1.20.1	2024-05-10T18:21:14.0765734	Item Models: bitsandbaubs
 b6d3b2e7f50b0f85cab97d7012c27f0ca2fc4636 assets/bitsandbaubs/models/item/air_balloon.json
 310eb885732e2060b07a8e50e5fbe890fa97993e assets/bitsandbaubs/models/item/corrupted_button.json
 b4ec89d14b07908efb3d5fc59511e0193a4302bd assets/bitsandbaubs/models/item/corrupted_door.json
@@ -12,10 +12,16 @@ d831e11ffb8879096eaa8b36beca6f3561a545f3 assets/bitsandbaubs/models/item/corrupt
 d43b512f300a514fe914689cb140143516e69f74 assets/bitsandbaubs/models/item/engine.json
 70d7864cb824f54d5e8caf013538d80c98f88b29 assets/bitsandbaubs/models/item/jade.json
 e5ee61974eed31f57a500be566330df8a43bcc1a assets/bitsandbaubs/models/item/jade_axe.json
+10b6919c111b2046415c776ac1f78e0ad338f81a assets/bitsandbaubs/models/item/jade_brick_slab.json
+11330c58be1fbf8ad3492e850f1b003cb9097dc2 assets/bitsandbaubs/models/item/jade_brick_stairs.json
+06801a88603dbab75e9fde2eefcf03e25356b2a6 assets/bitsandbaubs/models/item/jade_brick_wall.json
 d9aeee090edacb03c67b6f55737cf48f93a2c330 assets/bitsandbaubs/models/item/jade_club.json
 1792d45cb00babf85037c37506874b64aa05ccc0 assets/bitsandbaubs/models/item/jade_hoe.json
 5ce75b4191f3a9bbd787a1d1e26f95dfa80d6668 assets/bitsandbaubs/models/item/jade_pickaxe.json
 b08db564e9b696a73a02f4f9de62794049f59cda assets/bitsandbaubs/models/item/jade_shovel.json
+f2c00f9b0414559a131a2424f61822d0b9c2c561 assets/bitsandbaubs/models/item/jade_slab.json
+fa2230e258436536325360cb36c0e420a16cf0a1 assets/bitsandbaubs/models/item/jade_stairs.json
+ce27b4d478877de8ca9d65534f8323b0a1be0f86 assets/bitsandbaubs/models/item/jade_wall.json
 552056cbbfe87f6bcfa98bbfc5df01a5694b4c17 assets/bitsandbaubs/models/item/oak_air_ship.json
 0152cfe1ec23f5ef224a05469421d3980cb336b3 assets/bitsandbaubs/models/item/platinum_axe.json
 ca2169cf34cd9e424eb431cec927c94b4cc063d7 assets/bitsandbaubs/models/item/platinum_boots.json
