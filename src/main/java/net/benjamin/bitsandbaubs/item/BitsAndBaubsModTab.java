@@ -91,6 +91,12 @@ public class BitsAndBaubsModTab {
                 pOutput.accept(ModItems.OAK_AIR_SHIP.get());
 
                 pOutput.accept(ModItems.TERRACOTTA_GOLEM_SPAWN_EGG.get());
+
+                pOutput.accept(ModItems.CREEPER_WARD.get());
+                pOutput.accept(ModItems.ZOMBIE_WARD.get());
+                pOutput.accept(ModItems.ZOMBIFIED_PIGLIN_WARD.get());
+                pOutput.accept(ModItems.WITHER_SKELETON_WARD.get());
+
                 pOutput.accept(ModBlocks.SHOJI.get());
             })
             .build());

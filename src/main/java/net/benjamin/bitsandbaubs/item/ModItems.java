@@ -5,7 +5,8 @@ import net.benjamin.bitsandbaubs.block.ModBlocks;
 import net.benjamin.bitsandbaubs.entity.ModEntities;
 import net.benjamin.bitsandbaubs.entity.custom.AirShipEntity;
 import net.benjamin.bitsandbaubs.item.custom.JadeStaffItem;
-import net.minecraft.world.entity.vehicle.Boat;
+import net.benjamin.bitsandbaubs.item.custom.WardItem;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.*;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -104,6 +105,18 @@ public class ModItems {
     public static final RegistryObject<Item> CORRUPTED_HANGING_SIGN =
             ITEMS.register("corrupted_hanging_sign", () -> new HangingSignItem(ModBlocks.CORRUPTED_HANGING_SIGN.get()
                     , ModBlocks.CORRUPTED_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+
+    public static final RegistryObject<Item> CREEPER_WARD =
+            ITEMS.register("creeper_ward", () -> new WardItem(new Item.Properties().stacksTo(1).defaultDurability(30), EntityType.CREEPER));
+
+    public static final RegistryObject<Item> ZOMBIE_WARD =
+            ITEMS.register("zombie_ward", () -> new WardItem(new Item.Properties().stacksTo(1).defaultDurability(30), EntityType.ZOMBIE));
+
+    public static final RegistryObject<Item> ZOMBIFIED_PIGLIN_WARD =
+            ITEMS.register("zombified_piglin_ward", () -> new WardItem(new Item.Properties().stacksTo(1).defaultDurability(30), EntityType.ZOMBIFIED_PIGLIN));
+
+    public static final RegistryObject<Item> WITHER_SKELETON_WARD =
+            ITEMS.register("wither_skeleton_ward", () -> new WardItem(new Item.Properties().stacksTo(1).defaultDurability(30), EntityType.WITHER_SKELETON));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

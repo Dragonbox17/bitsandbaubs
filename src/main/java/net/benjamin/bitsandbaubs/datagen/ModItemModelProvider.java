@@ -142,6 +142,11 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.CORRUPTED_SIGN);
         simpleItem(ModItems.CORRUPTED_HANGING_SIGN);
+
+        simpleItem(ModItems.CREEPER_WARD);
+        simpleItem(ModItems.ZOMBIE_WARD);
+        simpleItem(ModItems.ZOMBIFIED_PIGLIN_WARD);
+        simpleItem(ModItems.WITHER_SKELETON_WARD);
     }
 
     private ItemModelBuilder handheldItem(RegistryObject<Item> item) {

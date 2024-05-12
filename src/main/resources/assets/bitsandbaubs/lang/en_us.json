@@ -65,6 +65,11 @@
   "block.bitsandbaubs.corrupted_sign": "Corrupted Sign",
   "block.bitsandbaubs.corrupted_hanging": "Corrupted Hanging Sign",
 
+  "item.bitsandbaubs.creeper_ward": "Creeper Ward",
+  "item.bitsandbaubs.zombie_ward": "Zombie Ward",
+  "item.bitsandbaubs.zombified_piglin_ward": "Zombified Piglin Ward",
+  "item.bitsandbaubs.wither_skeleton_ward": "Wither Skeleton Ward",
+
   "block.bitsandbaubs.shoji": "Shoji",
 
   "creativetab.bits_and_baubs_tab": "Bits and Baubs"

@@ -1,4 +1,4 @@
-// 1.20.1	2024-05-11T12:17:34.048482	Item Models: bitsandbaubs
+// 1.20.1	2024-05-11T20:30:27.8967154	Item Models: bitsandbaubs
 b6d3b2e7f50b0f85cab97d7012c27f0ca2fc4636 assets/bitsandbaubs/models/item/air_balloon.json
 310eb885732e2060b07a8e50e5fbe890fa97993e assets/bitsandbaubs/models/item/corrupted_button.json
 b4ec89d14b07908efb3d5fc59511e0193a4302bd assets/bitsandbaubs/models/item/corrupted_door.json
@@ -11,6 +11,7 @@ f311d43aa5e8ddbe4017d125a1cac520fbabe6ee assets/bitsandbaubs/models/item/corrupt
 282f5f8dba231bfc4f7911958e2ff2507adfd2d3 assets/bitsandbaubs/models/item/corrupted_slab.json
 e8bcab910ad0cf7e68e0d66e3d4e2618c5d6f3a9 assets/bitsandbaubs/models/item/corrupted_stairs.json
 d831e11ffb8879096eaa8b36beca6f3561a545f3 assets/bitsandbaubs/models/item/corrupted_trapdoor.json
+0bb1ceae42bc655dfb56f410f6830cedb6627065 assets/bitsandbaubs/models/item/creeper_ward.json
 d43b512f300a514fe914689cb140143516e69f74 assets/bitsandbaubs/models/item/engine.json
 70d7864cb824f54d5e8caf013538d80c98f88b29 assets/bitsandbaubs/models/item/jade.json
 e5ee61974eed31f57a500be566330df8a43bcc1a assets/bitsandbaubs/models/item/jade_axe.json
@@ -79,3 +80,6 @@ eabf02651881c32de2e99146c61c7479a6e332d4 assets/bitsandbaubs/models/item/platinu
 0bb94ae8bd70ebcfe6370ace068976da7f16c5cc assets/bitsandbaubs/models/item/propeller.json
 9758ccccf4587d53675bf332fef35f8a415f259a assets/bitsandbaubs/models/item/raw_platinum.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/bitsandbaubs/models/item/terracotta_golem_spawn_egg.json
+9a675b57882beddde08109c33021de07b0773fc5 assets/bitsandbaubs/models/item/wither_skeleton_ward.json
+f89bc633f4417f970b77cd502133bea969cef7ad assets/bitsandbaubs/models/item/zombie_ward.json
+067d3c35c92512dc1e3e38273e065e202fa08b46 assets/bitsandbaubs/models/item/zombified_piglin_ward.json
