@@ -13,13 +13,13 @@ import java.util.List;
 
 public class ModToolTiers {
     public static final Tier PLATINUM = TierSortingRegistry.registerTier(
-            new ForgeTier(4, 500, 4f, 3f, 20,
+            new ForgeTier(4, 500, 1f, 1f, 20,
                 ModTags.Blocks.NEEDS_PLATINUM_TOOL, () -> Ingredient.of(ModItems.PLATINUM_INGOT.get())),
             new ResourceLocation(BitsAndBaubs.MOD_ID, "platinum_ingot"), List.of(Tiers.DIAMOND), List.of()
     );
 
     public static final Tier JADE = TierSortingRegistry.registerTier(
-            new ForgeTier(3, 324, 1f, 2f, 30,
+            new ForgeTier(3, 324, 1f, 1f, 30,
                     ModTags.Blocks.NEEDS_JADE_TOOL, () -> Ingredient.of(ModItems.JADE.get())),
             new ResourceLocation(BitsAndBaubs.MOD_ID, "jade"), List.of(Tiers.IRON), List.of()
     );

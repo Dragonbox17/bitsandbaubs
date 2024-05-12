@@ -224,6 +224,50 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.PAPER), has(Items.PAPER))
                 .save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CREEPER_WARD.get())
+                .pattern("SIS")
+                .pattern("GJG")
+                .pattern("SIS")
+                .define('S', Items.STRING)
+                .define('I', ModBlocks.INFECTED_PLANKS.get())
+                .define('G', Items.GUNPOWDER)
+                .define('J', ModItems.JADE.get())
+                .unlockedBy(getHasName(ModItems.JADE.get()), has(ModItems.JADE.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ZOMBIE_WARD.get())
+                .pattern("SOS")
+                .pattern("RJR")
+                .pattern("SOS")
+                .define('S', Items.STRING)
+                .define('O', Items.OAK_PLANKS)
+                .define('R', Items.ROTTEN_FLESH)
+                .define('J', ModItems.JADE.get())
+                .unlockedBy(getHasName(ModItems.JADE.get()), has(ModItems.JADE.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ZOMBIFIED_PIGLIN_WARD.get())
+                .pattern("SWS")
+                .pattern("FJF")
+                .pattern("SWS")
+                .define('S', Items.STRING)
+                .define('W', Items.WARPED_PLANKS)
+                .define('F', Items.WARPED_FUNGUS)
+                .define('J', ModItems.JADE.get())
+                .unlockedBy(getHasName(ModItems.JADE.get()), has(ModItems.JADE.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.WITHER_SKELETON_WARD.get())
+                .pattern("SCS")
+                .pattern("FJF")
+                .pattern("SCS")
+                .define('S', Items.STRING)
+                .define('C', Items.CRIMSON_PLANKS)
+                .define('F', Items.CRIMSON_FUNGUS)
+                .define('J', ModItems.JADE.get())
+                .unlockedBy(getHasName(ModItems.JADE.get()), has(ModItems.JADE.get()))
+                .save(pRecipeOutput);
+
         stonecuttingRecipe(pRecipeOutput, RecipeCategory.MISC, ModBlocks.JADE_BLOCK.get(), ModBlocks.JADE_BRICKS.get());
         stonecuttingRecipe(pRecipeOutput, RecipeCategory.MISC, ModBlocks.JADE_BLOCK.get(), ModBlocks.JADE_STAIRS.get());
         stonecuttingRecipe(pRecipeOutput, RecipeCategory.MISC, ModBlocks.JADE_BLOCK.get(), ModBlocks.JADE_BRICK_STAIRS.get());
@@ -255,7 +299,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     }
 
-    protected static void stonecuttingRecipe(Consumer<FinishedRecipe> pRecipeOutput, RecipeCategory pCategory, ItemLike pResult, ItemLike pIngredient) {
-        stonecutterResultFromBase(pRecipeOutput, pCategory, pIngredient, pResult);
+    protected static void stonecuttingRecipe(Consumer<FinishedRecipe> pRecipeOutput, RecipeCategory pCategory, ItemLike pIngredient, ItemLike pResult) {
+        stonecutterResultFromBase(pRecipeOutput, pCategory, pResult, pIngredient);
     }
 }

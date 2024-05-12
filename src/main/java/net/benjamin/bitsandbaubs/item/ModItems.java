@@ -27,7 +27,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> PLATINUM_PICKAXE =
             ITEMS.register("platinum_pickaxe",
-                    () -> new PickaxeItem(ModToolTiers.PLATINUM, 1, 2, new Item.Properties()));
+                    () -> new PickaxeItem(ModToolTiers.PLATINUM, 1, -3, new Item.Properties()));
     public static final RegistryObject<Item> PLATINUM_AXE =
             ITEMS.register("platinum_axe",
                     () -> new AxeItem(ModToolTiers.PLATINUM, 6, 1, new Item.Properties()));
@@ -36,7 +36,7 @@ public class ModItems {
                     () -> new ShovelItem(ModToolTiers.PLATINUM, 1, 1, new Item.Properties()));
     public static final RegistryObject<Item> PLATINUM_SWORD =
             ITEMS.register("platinum_sword",
-                    () -> new SwordItem(ModToolTiers.PLATINUM, 5, 2, new Item.Properties()));
+                    () -> new SwordItem(ModToolTiers.PLATINUM, 5, -2, new Item.Properties()));
     public static final RegistryObject<Item> PLATINUM_HOE =
             ITEMS.register("platinum_hoe",
                     () -> new HoeItem(ModToolTiers.PLATINUM, 0, 1, new Item.Properties()));
@@ -90,7 +90,7 @@ public class ModItems {
                     () -> new ShovelItem(ModToolTiers.JADE, 1, 1, new Item.Properties()));
     public static final RegistryObject<Item> JADE_CLUB =
             ITEMS.register("jade_club",
-                    () -> new SwordItem(ModToolTiers.JADE, 6, 2, new Item.Properties()));
+                    () -> new SwordItem(ModToolTiers.JADE, 6, -3F, new Item.Properties()));
     public static final RegistryObject<Item> JADE_HOE =
             ITEMS.register("jade_hoe",
                     () -> new HoeItem(ModToolTiers.JADE, 0, 1, new Item.Properties()));
