@@ -3,14 +3,8 @@ package net.benjamin.bitsandbaubs.datagen.loot;
 import net.benjamin.bitsandbaubs.block.ModBlocks;
 import net.benjamin.bitsandbaubs.item.ModItems;
 import net.minecraft.data.loot.BlockLootSubProvider;
-import net.minecraft.world.flag.FeatureFlag;
-import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.flag.FeatureFlags;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.Set;
@@ -27,36 +21,36 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.dropSelf(ModBlocks.ALCHEMY_TABLE.get());
 
-        this.dropSelf(ModBlocks.CORRUPTED_LOG.get());
-        this.dropSelf(ModBlocks.CORRUPTED_WOOD.get());
-        this.dropSelf(ModBlocks.STRIPPED_CORRUPTED_LOG.get());
-        this.dropSelf(ModBlocks.STRIPPED_CORRUPTED_WOOD.get());
+        this.dropSelf(ModBlocks.INFECTED_LOG.get());
+        this.dropSelf(ModBlocks.INFECTED_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_INFECTED_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_INFECTED_WOOD.get());
 
-        this.dropSelf(ModBlocks.CORRUPTED_PLANKS.get());
-        this.add(ModBlocks.CORRUPTED_LEAVES.get(),
-                block -> createLeavesDrops(block, ModBlocks.CORRUPTED_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        this.dropSelf(ModBlocks.INFECTED_PLANKS.get());
+        this.add(ModBlocks.INFECTED_LEAVES.get(),
+                block -> createLeavesDrops(block, ModBlocks.INFECTED_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
-        this.dropSelf(ModBlocks.CORRUPTED_SAPLING.get());
+        this.dropSelf(ModBlocks.INFECTED_SAPLING.get());
 
-        this.dropSelf(ModBlocks.CORRUPTED_STAIRS.get());
-        this.dropSelf(ModBlocks.CORRUPTED_BUTTON.get());
-        this.dropSelf(ModBlocks.CORRUPTED_PRESSURE_PLATE.get());
-        this.dropSelf(ModBlocks.CORRUPTED_FENCE.get());
-        this.dropSelf(ModBlocks.CORRUPTED_FENCE_GATE.get());
-        this.dropSelf(ModBlocks.CORRUPTED_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.INFECTED_STAIRS.get());
+        this.dropSelf(ModBlocks.INFECTED_BUTTON.get());
+        this.dropSelf(ModBlocks.INFECTED_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.INFECTED_FENCE.get());
+        this.dropSelf(ModBlocks.INFECTED_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.INFECTED_TRAPDOOR.get());
 
-        this.add(ModBlocks.CORRUPTED_SLAB.get(),
-                block -> createSlabItemTable(ModBlocks.CORRUPTED_SLAB.get()));
-        this.add(ModBlocks.CORRUPTED_DOOR.get(),
-                block -> createDoorTable(ModBlocks.CORRUPTED_DOOR.get()));
+        this.add(ModBlocks.INFECTED_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.INFECTED_SLAB.get()));
+        this.add(ModBlocks.INFECTED_DOOR.get(),
+                block -> createDoorTable(ModBlocks.INFECTED_DOOR.get()));
 
-        this.add(ModBlocks.CORRUPTED_SIGN.get(),
+        this.add(ModBlocks.INFECTED_SIGN.get(),
                 block -> createSingleItemTable(ModItems.CORRUPTED_SIGN.get()));
-        this.add(ModBlocks.CORRUPTED_WALL_SIGN.get(),
+        this.add(ModBlocks.INFECTED_WALL_SIGN.get(),
                 block -> createSingleItemTable(ModItems.CORRUPTED_SIGN.get()));
-        this.add(ModBlocks.CORRUPTED_HANGING_SIGN.get(),
+        this.add(ModBlocks.INFECTED_HANGING_SIGN.get(),
                 block -> createSingleItemTable(ModItems.CORRUPTED_HANGING_SIGN.get()));
-        this.add(ModBlocks.CORRUPTED_WALL_HANGING_SIGN.get(),
+        this.add(ModBlocks.INFECTED_WALL_HANGING_SIGN.get(),
                 block -> createSingleItemTable(ModItems.CORRUPTED_HANGING_SIGN.get()));
 
         this.add(ModBlocks.JADE_ORE.get(),

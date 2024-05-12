@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "bitsandbaubs:block/stripped_corrupted_log",
-    "side": "bitsandbaubs:block/stripped_corrupted_log"
-  }
-}

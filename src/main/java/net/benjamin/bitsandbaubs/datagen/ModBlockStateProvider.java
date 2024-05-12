@@ -36,40 +36,40 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlockWithItem(ModBlocks.ALCHEMY_TABLE.get(),
                 new ModelFile.UncheckedModelFile(modLoc("block/alchemy_table")));
 
-        logBlock((RotatedPillarBlock) ModBlocks.CORRUPTED_LOG.get());
-        axisBlock(((RotatedPillarBlock) ModBlocks.CORRUPTED_WOOD.get()), blockTexture(ModBlocks.CORRUPTED_LOG.get()),
-                blockTexture(ModBlocks.CORRUPTED_LOG.get()));
+        logBlock((RotatedPillarBlock) ModBlocks.INFECTED_LOG.get());
+        axisBlock(((RotatedPillarBlock) ModBlocks.INFECTED_WOOD.get()), blockTexture(ModBlocks.INFECTED_LOG.get()),
+                blockTexture(ModBlocks.INFECTED_LOG.get()));
 
-        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_CORRUPTED_LOG.get()), blockTexture(ModBlocks.STRIPPED_CORRUPTED_LOG.get()),
-                new ResourceLocation(BitsAndBaubs.MOD_ID, "block/stripped_corrupted_log_top"));
-        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_CORRUPTED_WOOD.get()), blockTexture(ModBlocks.STRIPPED_CORRUPTED_LOG.get()),
-                blockTexture(ModBlocks.STRIPPED_CORRUPTED_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_INFECTED_LOG.get()), blockTexture(ModBlocks.STRIPPED_INFECTED_LOG.get()),
+                new ResourceLocation(BitsAndBaubs.MOD_ID, "block/stripped_infected_log_top"));
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_INFECTED_WOOD.get()), blockTexture(ModBlocks.STRIPPED_INFECTED_LOG.get()),
+                blockTexture(ModBlocks.STRIPPED_INFECTED_LOG.get()));
 
-        saplingBlock(ModBlocks.CORRUPTED_SAPLING);
+        saplingBlock(ModBlocks.INFECTED_SAPLING);
 
-        blockItem(ModBlocks.CORRUPTED_LOG);
-        blockItem(ModBlocks.CORRUPTED_WOOD);
-        blockItem(ModBlocks.STRIPPED_CORRUPTED_LOG);
-        blockItem(ModBlocks.STRIPPED_CORRUPTED_WOOD);
+        blockItem(ModBlocks.INFECTED_LOG);
+        blockItem(ModBlocks.INFECTED_WOOD);
+        blockItem(ModBlocks.STRIPPED_INFECTED_LOG);
+        blockItem(ModBlocks.STRIPPED_INFECTED_WOOD);
 
-        blockWithItem(ModBlocks.CORRUPTED_PLANKS);
+        blockWithItem(ModBlocks.INFECTED_PLANKS);
 
-        leavesBlock(ModBlocks.CORRUPTED_LEAVES);
+        leavesBlock(ModBlocks.INFECTED_LEAVES);
 
-        stairsBlock(((StairBlock) ModBlocks.CORRUPTED_STAIRS.get()), blockTexture(ModBlocks.CORRUPTED_PLANKS.get()));
-        slabBlock(((SlabBlock) ModBlocks.CORRUPTED_SLAB.get()), blockTexture(ModBlocks.CORRUPTED_PLANKS.get()), blockTexture(ModBlocks.CORRUPTED_PLANKS.get()));
+        stairsBlock(((StairBlock) ModBlocks.INFECTED_STAIRS.get()), blockTexture(ModBlocks.INFECTED_PLANKS.get()));
+        slabBlock(((SlabBlock) ModBlocks.INFECTED_SLAB.get()), blockTexture(ModBlocks.INFECTED_PLANKS.get()), blockTexture(ModBlocks.INFECTED_PLANKS.get()));
 
-        buttonBlock(((ButtonBlock) ModBlocks.CORRUPTED_BUTTON.get()), blockTexture(ModBlocks.CORRUPTED_PLANKS.get()));
-        pressurePlateBlock(((PressurePlateBlock) ModBlocks.CORRUPTED_PRESSURE_PLATE.get()), blockTexture(ModBlocks.CORRUPTED_PLANKS.get()));
+        buttonBlock(((ButtonBlock) ModBlocks.INFECTED_BUTTON.get()), blockTexture(ModBlocks.INFECTED_PLANKS.get()));
+        pressurePlateBlock(((PressurePlateBlock) ModBlocks.INFECTED_PRESSURE_PLATE.get()), blockTexture(ModBlocks.INFECTED_PLANKS.get()));
 
-        fenceGateBlock(((FenceGateBlock) ModBlocks.CORRUPTED_FENCE_GATE.get()), blockTexture(ModBlocks.CORRUPTED_PLANKS.get()));
-        fenceBlock(((FenceBlock) ModBlocks.CORRUPTED_FENCE.get()), blockTexture(ModBlocks.CORRUPTED_PLANKS.get()));
+        fenceGateBlock(((FenceGateBlock) ModBlocks.INFECTED_FENCE_GATE.get()), blockTexture(ModBlocks.INFECTED_PLANKS.get()));
+        fenceBlock(((FenceBlock) ModBlocks.INFECTED_FENCE.get()), blockTexture(ModBlocks.INFECTED_PLANKS.get()));
 
-        doorBlockWithRenderType(((DoorBlock) ModBlocks.CORRUPTED_DOOR.get()), modLoc("block/corrupted_door_bottom"), modLoc("block/corrupted_door_top"), "cutout");
-        trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.CORRUPTED_TRAPDOOR.get()), modLoc("block/corrupted_trapdoor"), true, "cutout");
+        doorBlockWithRenderType(((DoorBlock) ModBlocks.INFECTED_DOOR.get()), modLoc("block/infected_door_bottom"), modLoc("block/infected_door_top"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.INFECTED_TRAPDOOR.get()), modLoc("block/infected_trapdoor"), true, "cutout");
 
-        signBlock((StandingSignBlock) ModBlocks.CORRUPTED_SIGN.get(), (WallSignBlock) ModBlocks.CORRUPTED_WALL_SIGN.get(), blockTexture(ModBlocks.CORRUPTED_PLANKS.get()));
-        hangingSignBlock(ModBlocks.CORRUPTED_HANGING_SIGN.get(), ModBlocks.CORRUPTED_WALL_HANGING_SIGN.get(), blockTexture(ModBlocks.CORRUPTED_PLANKS.get()));
+        signBlock((StandingSignBlock) ModBlocks.INFECTED_SIGN.get(), (WallSignBlock) ModBlocks.INFECTED_WALL_SIGN.get(), blockTexture(ModBlocks.INFECTED_PLANKS.get()));
+        hangingSignBlock(ModBlocks.INFECTED_HANGING_SIGN.get(), ModBlocks.INFECTED_WALL_HANGING_SIGN.get(), blockTexture(ModBlocks.INFECTED_PLANKS.get()));
 
         blockWithItem(ModBlocks.SHOJI);
     }

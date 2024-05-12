@@ -34,11 +34,11 @@ public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
     @Override
     public @Nullable BlockState getToolModifiedState(BlockState state, UseOnContext context, ToolAction toolAction, boolean simulate) {
         if(context.getItemInHand().getItem() instanceof AxeItem) {
-            if(state.is(ModBlocks.CORRUPTED_LOG.get())) {
-                return ModBlocks.STRIPPED_CORRUPTED_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            if(state.is(ModBlocks.INFECTED_LOG.get())) {
+                return ModBlocks.STRIPPED_INFECTED_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
             }
-            if(state.is(ModBlocks.CORRUPTED_WOOD.get())) {
-                return ModBlocks.STRIPPED_CORRUPTED_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            if(state.is(ModBlocks.INFECTED_WOOD.get())) {
+                return ModBlocks.STRIPPED_INFECTED_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
             }
         }
         return super.getToolModifiedState(state, context, toolAction, simulate);

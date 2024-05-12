@@ -2,7 +2,6 @@ package net.benjamin.bitsandbaubs.datagen;
 
 import net.benjamin.bitsandbaubs.BitsAndBaubs;
 import net.benjamin.bitsandbaubs.block.ModBlocks;
-import net.benjamin.bitsandbaubs.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -35,23 +34,23 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         , ModBlocks.JADE_BRICK_WALL.get());
 
         this.tag(BlockTags.LOGS_THAT_BURN)
-                .add(ModBlocks.CORRUPTED_LOG.get())
-                .add(ModBlocks.CORRUPTED_WOOD.get())
-                .add(ModBlocks.STRIPPED_CORRUPTED_LOG.get())
-                .add(ModBlocks.STRIPPED_CORRUPTED_WOOD.get());
+                .add(ModBlocks.INFECTED_LOG.get())
+                .add(ModBlocks.INFECTED_WOOD.get())
+                .add(ModBlocks.STRIPPED_INFECTED_LOG.get())
+                .add(ModBlocks.STRIPPED_INFECTED_WOOD.get());
 
         this.tag(BlockTags.PLANKS)
-                .add(ModBlocks.CORRUPTED_PLANKS.get());
+                .add(ModBlocks.INFECTED_PLANKS.get());
 
         this.tag(BlockTags.LEAVES)
-                .add(ModBlocks.CORRUPTED_LEAVES.get());
+                .add(ModBlocks.INFECTED_LEAVES.get());
 
         this.tag(BlockTags.FENCES)
-                .add(ModBlocks.CORRUPTED_FENCE.get());
+                .add(ModBlocks.INFECTED_FENCE.get());
         this.tag(BlockTags.FENCE_GATES)
-                .add(ModBlocks.CORRUPTED_FENCE_GATE.get());
+                .add(ModBlocks.INFECTED_FENCE_GATE.get());
         this.tag(BlockTags.TRAPDOORS)
-                .add(ModBlocks.CORRUPTED_TRAPDOOR.get());
+                .add(ModBlocks.INFECTED_TRAPDOOR.get());
 
         this.tag(BlockTags.WALLS)
                 .add(ModBlocks.JADE_WALL.get())

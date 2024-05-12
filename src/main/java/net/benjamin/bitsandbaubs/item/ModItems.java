@@ -99,12 +99,12 @@ public class ModItems {
             ITEMS.register("jade_oak_staff", () -> new JadeStaffItem(new Item.Properties().stacksTo(1).defaultDurability(324)));
 
     public static final RegistryObject<Item> CORRUPTED_SIGN =
-            ITEMS.register("corrupted_sign", () -> new SignItem(new Item.Properties().stacksTo(16)
-                    , ModBlocks.CORRUPTED_SIGN.get(), ModBlocks.CORRUPTED_WALL_SIGN.get()));
+            ITEMS.register("infected_sign", () -> new SignItem(new Item.Properties().stacksTo(16)
+                    , ModBlocks.INFECTED_SIGN.get(), ModBlocks.INFECTED_WALL_SIGN.get()));
 
     public static final RegistryObject<Item> CORRUPTED_HANGING_SIGN =
-            ITEMS.register("corrupted_hanging_sign", () -> new HangingSignItem(ModBlocks.CORRUPTED_HANGING_SIGN.get()
-                    , ModBlocks.CORRUPTED_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+            ITEMS.register("infected_hanging_sign", () -> new HangingSignItem(ModBlocks.INFECTED_HANGING_SIGN.get()
+                    , ModBlocks.INFECTED_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
     public static final RegistryObject<Item> CREEPER_WARD =
             ITEMS.register("creeper_ward", () -> new WardItem(new Item.Properties().stacksTo(1).defaultDurability(30), EntityType.CREEPER));

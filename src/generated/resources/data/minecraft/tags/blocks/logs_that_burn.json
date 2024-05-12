@@ -1,8 +1,8 @@
 {
   "values": [
-    "bitsandbaubs:corrupted_log",
-    "bitsandbaubs:corrupted_wood",
-    "bitsandbaubs:stripped_corrupted_log",
-    "bitsandbaubs:stripped_corrupted_wood"
+    "bitsandbaubs:infected_log",
+    "bitsandbaubs:infected_wood",
+    "bitsandbaubs:stripped_infected_log",
+    "bitsandbaubs:stripped_infected_wood"
   ]
 }

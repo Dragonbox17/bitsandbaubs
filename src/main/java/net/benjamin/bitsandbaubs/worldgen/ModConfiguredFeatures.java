@@ -17,7 +17,6 @@ import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSi
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
-import net.minecraft.world.level.levelgen.feature.trunkplacers.UpwardsBranchingTrunkPlacer;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
 
@@ -40,9 +39,9 @@ public class ModConfiguredFeatures {
         register(context, JADE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldJadeOre, 4));
 
         register(context, CORRUPTED_TREE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(ModBlocks.CORRUPTED_LOG.get()),
+                BlockStateProvider.simple(ModBlocks.INFECTED_LOG.get()),
                 new StraightTrunkPlacer(3, 4, 5),
-                BlockStateProvider.simple(ModBlocks.CORRUPTED_LEAVES.get()),
+                BlockStateProvider.simple(ModBlocks.INFECTED_LEAVES.get()),
                 new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
                 new TwoLayersFeatureSize(1, 0, 2)).build()
         );

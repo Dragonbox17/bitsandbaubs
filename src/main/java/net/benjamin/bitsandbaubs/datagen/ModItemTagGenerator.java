@@ -7,7 +7,6 @@ import net.benjamin.bitsandbaubs.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -30,24 +29,24 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModItems.PLATINUM_BOOTS.get());
 
         this.tag(ItemTags.LOGS_THAT_BURN)
-                .add(ModBlocks.CORRUPTED_LOG.get().asItem())
-                .add(ModBlocks.CORRUPTED_WOOD.get().asItem())
-                .add(ModBlocks.STRIPPED_CORRUPTED_LOG.get().asItem())
-                .add(ModBlocks.STRIPPED_CORRUPTED_WOOD.get().asItem());
+                .add(ModBlocks.INFECTED_LOG.get().asItem())
+                .add(ModBlocks.INFECTED_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_INFECTED_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_INFECTED_WOOD.get().asItem());
 
         this.tag(ItemTags.PLANKS)
-                .add(ModBlocks.CORRUPTED_PLANKS.get().asItem());
+                .add(ModBlocks.INFECTED_PLANKS.get().asItem());
 
         this.tag(ItemTags.LEAVES)
-                .add(ModBlocks.CORRUPTED_LEAVES.get().asItem());
+                .add(ModBlocks.INFECTED_LEAVES.get().asItem());
 
         this.tag(ModTags.Items.CORRUPTED_LOGS)
-                .add(ModBlocks.CORRUPTED_LOG.get().asItem())
-                .add(ModBlocks.CORRUPTED_WOOD.get().asItem())
-                .add(ModBlocks.STRIPPED_CORRUPTED_LOG.get().asItem())
-                .add(ModBlocks.STRIPPED_CORRUPTED_WOOD.get().asItem());
+                .add(ModBlocks.INFECTED_LOG.get().asItem())
+                .add(ModBlocks.INFECTED_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_INFECTED_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_INFECTED_WOOD.get().asItem());
 
         this.tag((ItemTags.TRAPDOORS))
-                .add(ModBlocks.CORRUPTED_TRAPDOOR.get().asItem());
+                .add(ModBlocks.INFECTED_TRAPDOOR.get().asItem());
     }
 }

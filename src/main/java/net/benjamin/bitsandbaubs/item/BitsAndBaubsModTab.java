@@ -66,24 +66,24 @@ public class BitsAndBaubsModTab {
                 pOutput.accept(ModBlocks.PLATINUM_BLOCK.get());
                 pOutput.accept(ModBlocks.RAW_PLATINUM_BLOCK.get());
 
-                pOutput.accept(ModBlocks.CORRUPTED_SAPLING.get());
+                pOutput.accept(ModBlocks.INFECTED_SAPLING.get());
 
-                pOutput.accept(ModBlocks.CORRUPTED_LOG.get());
-                pOutput.accept(ModBlocks.CORRUPTED_WOOD.get());
-                pOutput.accept(ModBlocks.STRIPPED_CORRUPTED_LOG.get());
-                pOutput.accept(ModBlocks.STRIPPED_CORRUPTED_WOOD.get());
-                pOutput.accept(ModBlocks.CORRUPTED_PLANKS.get());
-                pOutput.accept(ModBlocks.CORRUPTED_STAIRS.get());
-                pOutput.accept(ModBlocks.CORRUPTED_SLAB.get());
-                pOutput.accept(ModBlocks.CORRUPTED_BUTTON.get());
-                pOutput.accept(ModBlocks.CORRUPTED_PRESSURE_PLATE.get());
-                pOutput.accept(ModBlocks.CORRUPTED_FENCE.get());
-                pOutput.accept(ModBlocks.CORRUPTED_FENCE_GATE.get());
-                pOutput.accept(ModBlocks.CORRUPTED_DOOR.get());
-                pOutput.accept(ModBlocks.CORRUPTED_TRAPDOOR.get());
+                pOutput.accept(ModBlocks.INFECTED_LOG.get());
+                pOutput.accept(ModBlocks.INFECTED_WOOD.get());
+                pOutput.accept(ModBlocks.STRIPPED_INFECTED_LOG.get());
+                pOutput.accept(ModBlocks.STRIPPED_INFECTED_WOOD.get());
+                pOutput.accept(ModBlocks.INFECTED_PLANKS.get());
+                pOutput.accept(ModBlocks.INFECTED_STAIRS.get());
+                pOutput.accept(ModBlocks.INFECTED_SLAB.get());
+                pOutput.accept(ModBlocks.INFECTED_BUTTON.get());
+                pOutput.accept(ModBlocks.INFECTED_PRESSURE_PLATE.get());
+                pOutput.accept(ModBlocks.INFECTED_FENCE.get());
+                pOutput.accept(ModBlocks.INFECTED_FENCE_GATE.get());
+                pOutput.accept(ModBlocks.INFECTED_DOOR.get());
+                pOutput.accept(ModBlocks.INFECTED_TRAPDOOR.get());
                 pOutput.accept(ModItems.CORRUPTED_SIGN.get());
                 pOutput.accept(ModItems.CORRUPTED_HANGING_SIGN.get());
-                pOutput.accept(ModBlocks.CORRUPTED_LEAVES.get());
+                pOutput.accept(ModBlocks.INFECTED_LEAVES.get());
 
                 pOutput.accept(ModItems.PROPELLER.get());
                 pOutput.accept(ModItems.ENGINE.get());

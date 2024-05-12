@@ -7,13 +7,10 @@ import net.benjamin.bitsandbaubs.util.ModTags;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
-import net.minecraft.world.item.crafting.StonecutterRecipe;
 import net.minecraft.world.level.ItemLike;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
@@ -154,7 +151,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.RAW_PLATINUM_BLOCK.get()), has(ModBlocks.RAW_PLATINUM_BLOCK.get()))
                 .save(pRecipeOutput);
 
-        planksFromLogs(pRecipeOutput, ModBlocks.CORRUPTED_PLANKS.get(), ModTags.Items.CORRUPTED_LOGS, 4);
+        planksFromLogs(pRecipeOutput, ModBlocks.INFECTED_PLANKS.get(), ModTags.Items.CORRUPTED_LOGS, 4);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.JADE_OAK_STAFF.get())
                 .pattern("  J")

@@ -126,19 +126,19 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         withExistingParent(ModItems.TERRACOTTA_GOLEM_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
 
-        saplingItem(ModBlocks.CORRUPTED_SAPLING);
+        saplingItem(ModBlocks.INFECTED_SAPLING);
 
-        evenSimplerBlockItem(ModBlocks.CORRUPTED_FENCE_GATE);
-        evenSimplerBlockItem(ModBlocks.CORRUPTED_BUTTON);
-        evenSimplerBlockItem(ModBlocks.CORRUPTED_STAIRS);
-        evenSimplerBlockItem(ModBlocks.CORRUPTED_SLAB);
-        evenSimplerBlockItem(ModBlocks.CORRUPTED_PRESSURE_PLATE);
+        evenSimplerBlockItem(ModBlocks.INFECTED_FENCE_GATE);
+        evenSimplerBlockItem(ModBlocks.INFECTED_BUTTON);
+        evenSimplerBlockItem(ModBlocks.INFECTED_STAIRS);
+        evenSimplerBlockItem(ModBlocks.INFECTED_SLAB);
+        evenSimplerBlockItem(ModBlocks.INFECTED_PRESSURE_PLATE);
 
-        simpleBlockItem(ModBlocks.CORRUPTED_DOOR);
+        simpleBlockItem(ModBlocks.INFECTED_DOOR);
 
-        fenceItem(ModBlocks.CORRUPTED_FENCE, ModBlocks.CORRUPTED_PLANKS);
+        fenceItem(ModBlocks.INFECTED_FENCE, ModBlocks.INFECTED_PLANKS);
 
-        trapdoorItem(ModBlocks.CORRUPTED_TRAPDOOR);
+        trapdoorItem(ModBlocks.INFECTED_TRAPDOOR);
 
         simpleItem(ModItems.CORRUPTED_SIGN);
         simpleItem(ModItems.CORRUPTED_HANGING_SIGN);

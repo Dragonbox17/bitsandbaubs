@@ -71,20 +71,20 @@ public class ModBlocks {
     public static final RegistryObject<Block> JADE_BRICK_WALL =
             registerBlock("jade_brick_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_WALL).strength(40)));
 
-    public static final RegistryObject<Block> CORRUPTED_SAPLING =
-            registerBlock("corrupted_sapling", () -> new SaplingBlock(new CorruptedTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> INFECTED_SAPLING =
+            registerBlock("infected_sapling", () -> new SaplingBlock(new CorruptedTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
-    public static final RegistryObject<Block> CORRUPTED_LOG =
-            registerBlock("corrupted_log", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3)));
-    public static final RegistryObject<Block> CORRUPTED_WOOD =
-            registerBlock("corrupted_wood", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3)));
-    public static final RegistryObject<Block> STRIPPED_CORRUPTED_LOG =
-            registerBlock("stripped_corrupted_log", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).strength(3)));
-    public static final RegistryObject<Block> STRIPPED_CORRUPTED_WOOD =
-            registerBlock("stripped_corrupted_wood", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).strength(3)));
+    public static final RegistryObject<Block> INFECTED_LOG =
+            registerBlock("infected_log", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3)));
+    public static final RegistryObject<Block> INFECTED_WOOD =
+            registerBlock("infected_wood", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3)));
+    public static final RegistryObject<Block> STRIPPED_INFECTED_LOG =
+            registerBlock("stripped_infected_log", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).strength(3)));
+    public static final RegistryObject<Block> STRIPPED_INFECTED_WOOD =
+            registerBlock("stripped_infected_wood", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).strength(3)));
 
-    public static final RegistryObject<Block> CORRUPTED_PLANKS =
-            registerBlock("corrupted_planks", () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)){
+    public static final RegistryObject<Block> INFECTED_PLANKS =
+            registerBlock("infected_planks", () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)){
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return true;
@@ -100,8 +100,8 @@ public class ModBlocks {
                     return 5;
                 }
             });
-    public static final RegistryObject<Block> CORRUPTED_LEAVES =
-            registerBlock("corrupted_leaves", () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)){
+    public static final RegistryObject<Block> INFECTED_LEAVES =
+            registerBlock("infected_leaves", () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)){
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return true;
@@ -118,8 +118,8 @@ public class ModBlocks {
                 }
             });
 
-    public static final RegistryObject<Block> CORRUPTED_STAIRS = registerBlock("corrupted_stairs",
-            () -> new StairBlock(() -> ModBlocks.CORRUPTED_PLANKS.get().defaultBlockState() ,
+    public static final RegistryObject<Block> INFECTED_STAIRS = registerBlock("infected_stairs",
+            () -> new StairBlock(() -> ModBlocks.INFECTED_PLANKS.get().defaultBlockState() ,
             BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS)){
         @Override
         public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
@@ -137,8 +137,8 @@ public class ModBlocks {
         }
     });
 
-    public static final RegistryObject<Block> CORRUPTED_SLAB =
-            registerBlock("corrupted_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB)){
+    public static final RegistryObject<Block> INFECTED_SLAB =
+            registerBlock("infected_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB)){
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return true;
@@ -155,8 +155,8 @@ public class ModBlocks {
                 }
             });
 
-    public static final RegistryObject<Block> CORRUPTED_BUTTON =
-            registerBlock("corrupted_button", () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON)
+    public static final RegistryObject<Block> INFECTED_BUTTON =
+            registerBlock("infected_button", () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON)
                     , BlockSetType.OAK, 20, true){
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
@@ -174,8 +174,8 @@ public class ModBlocks {
                 }
             });
 
-    public static final RegistryObject<Block> CORRUPTED_PRESSURE_PLATE =
-            registerBlock("corrupted_pressure_plate", () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK){
+    public static final RegistryObject<Block> INFECTED_PRESSURE_PLATE =
+            registerBlock("infected_pressure_plate", () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK){
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return true;
@@ -192,8 +192,8 @@ public class ModBlocks {
                 }
             });
 
-    public static final RegistryObject<Block> CORRUPTED_FENCE_GATE =
-            registerBlock("corrupted_fence_gate", () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE),
+    public static final RegistryObject<Block> INFECTED_FENCE_GATE =
+            registerBlock("infected_fence_gate", () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE),
                     SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE){
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
@@ -211,8 +211,8 @@ public class ModBlocks {
                 }
             });
 
-    public static final RegistryObject<Block> CORRUPTED_FENCE =
-            registerBlock("corrupted_fence", () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)){
+    public static final RegistryObject<Block> INFECTED_FENCE =
+            registerBlock("infected_fence", () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)){
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return true;
@@ -229,8 +229,8 @@ public class ModBlocks {
                 }
             });
 
-    public static final RegistryObject<Block> CORRUPTED_DOOR =
-            registerBlock("corrupted_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), BlockSetType.OAK){
+    public static final RegistryObject<Block> INFECTED_DOOR =
+            registerBlock("infected_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), BlockSetType.OAK){
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return true;
@@ -247,8 +247,8 @@ public class ModBlocks {
                 }
             });
 
-    public static final RegistryObject<Block> CORRUPTED_TRAPDOOR =
-            registerBlock("corrupted_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(ModBlocks.CORRUPTED_PLANKS.get()), BlockSetType.OAK){
+    public static final RegistryObject<Block> INFECTED_TRAPDOOR =
+            registerBlock("infected_trapdoor", () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(ModBlocks.INFECTED_PLANKS.get()), BlockSetType.OAK){
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return true;
@@ -265,16 +265,16 @@ public class ModBlocks {
                 }
             });
 
-    public static final RegistryObject<Block> CORRUPTED_SIGN = BLOCKS.register("corrupted_sign",
+    public static final RegistryObject<Block> INFECTED_SIGN = BLOCKS.register("infected_sign",
             () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.CORRUPTED));
 
-    public static final RegistryObject<Block> CORRUPTED_WALL_SIGN = BLOCKS.register("corrupted_wall_sign",
+    public static final RegistryObject<Block> INFECTED_WALL_SIGN = BLOCKS.register("infected_wall_sign",
             () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.CORRUPTED));
 
-    public static final RegistryObject<Block> CORRUPTED_HANGING_SIGN = BLOCKS.register("corrupted_hanging_sign",
+    public static final RegistryObject<Block> INFECTED_HANGING_SIGN = BLOCKS.register("infected_hanging_sign",
             () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.CORRUPTED));
 
-    public static final RegistryObject<Block> CORRUPTED_WALL_HANGING_SIGN = BLOCKS.register("corrupted_wall_hanging_sign",
+    public static final RegistryObject<Block> INFECTED_WALL_HANGING_SIGN = BLOCKS.register("infected_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.CORRUPTED));
 
     public static final RegistryObject<Block> SHOJI =
