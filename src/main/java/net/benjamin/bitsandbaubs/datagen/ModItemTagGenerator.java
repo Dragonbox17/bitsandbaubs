@@ -3,11 +3,13 @@ package net.benjamin.bitsandbaubs.datagen;
 import net.benjamin.bitsandbaubs.BitsAndBaubs;
 import net.benjamin.bitsandbaubs.block.ModBlocks;
 import net.benjamin.bitsandbaubs.item.ModItems;
+import net.benjamin.bitsandbaubs.item.custom.BulletRoundItem;
 import net.benjamin.bitsandbaubs.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -48,5 +50,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag((ItemTags.TRAPDOORS))
                 .add(ModBlocks.INFECTED_TRAPDOOR.get().asItem());
+
+        this.tag(ModTags.Items.BULLET_ROUND)
+                .add(ModItems.BULLET_ROUND.get());
     }
 }

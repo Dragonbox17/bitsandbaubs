@@ -4,6 +4,8 @@ import net.benjamin.bitsandbaubs.BitsAndBaubs;
 import net.benjamin.bitsandbaubs.block.ModBlocks;
 import net.benjamin.bitsandbaubs.entity.ModEntities;
 import net.benjamin.bitsandbaubs.entity.custom.AirShipEntity;
+import net.benjamin.bitsandbaubs.item.custom.BulletRoundItem;
+import net.benjamin.bitsandbaubs.item.custom.FlintlockItem;
 import net.benjamin.bitsandbaubs.item.custom.JadeStaffItem;
 import net.benjamin.bitsandbaubs.item.custom.WardItem;
 import net.minecraft.world.entity.EntityType;
@@ -117,6 +119,12 @@ public class ModItems {
 
     public static final RegistryObject<Item> WITHER_SKELETON_WARD =
             ITEMS.register("wither_skeleton_ward", () -> new WardItem(new Item.Properties().stacksTo(1).defaultDurability(30), EntityType.WITHER_SKELETON));
+
+    public static final RegistryObject<Item> BULLET_ROUND =
+            ITEMS.register("bullet_round", () -> new BulletRoundItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> FLINTLOCK_PISTOL =
+            ITEMS.register("flintlock_pistol", () -> new FlintlockItem(new Item.Properties().defaultDurability(300)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

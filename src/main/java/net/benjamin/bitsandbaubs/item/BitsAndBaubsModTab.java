@@ -97,6 +97,9 @@ public class BitsAndBaubsModTab {
                 pOutput.accept(ModItems.ZOMBIFIED_PIGLIN_WARD.get());
                 pOutput.accept(ModItems.WITHER_SKELETON_WARD.get());
 
+                pOutput.accept(ModItems.FLINTLOCK_PISTOL.get());
+                pOutput.accept(ModItems.BULLET_ROUND.get());
+
                 pOutput.accept(ModBlocks.SHOJI.get());
             })
             .build());

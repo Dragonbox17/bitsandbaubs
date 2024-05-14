@@ -147,6 +147,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.ZOMBIE_WARD);
         simpleItem(ModItems.ZOMBIFIED_PIGLIN_WARD);
         simpleItem(ModItems.WITHER_SKELETON_WARD);
+
+        simpleItem(ModItems.BULLET_ROUND);
     }
 
     private ItemModelBuilder handheldItem(RegistryObject<Item> item) {

@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "bitsandbaubs:item/flintlock_pistol_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "bitsandbaubs:item/flintlock_pistol_2d"
+    },
+    "ground": {
+      "parent": "bitsandbaubs:item/flintlock_pistol_2d"
+    },
+    "fixed": {
+      "parent": "bitsandbaubs:item/flintlock_pistol_2d"
+    }
+  }
+}

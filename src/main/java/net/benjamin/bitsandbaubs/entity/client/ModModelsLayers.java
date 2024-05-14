@@ -14,4 +14,9 @@ public class ModModelsLayers {
             new ModelLayerLocation(
                     new ResourceLocation(BitsAndBaubs.MOD_ID, "oak_air_ship"), "main"
             );
+
+    public static final ModelLayerLocation BULLET_ROUND_LAYER =
+            new ModelLayerLocation(
+                    new ResourceLocation(BitsAndBaubs.MOD_ID, "bullet_round_layer"), "main"
+            );
 }

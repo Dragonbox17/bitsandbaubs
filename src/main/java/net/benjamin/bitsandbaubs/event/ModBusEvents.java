@@ -4,6 +4,7 @@ package net.benjamin.bitsandbaubs.event;
 import net.benjamin.bitsandbaubs.BitsAndBaubs;
 import net.benjamin.bitsandbaubs.entity.ModEntities;
 import net.benjamin.bitsandbaubs.entity.client.AirShipModel;
+import net.benjamin.bitsandbaubs.entity.client.BulletRoundModel;
 import net.benjamin.bitsandbaubs.entity.client.ModModelsLayers;
 import net.benjamin.bitsandbaubs.entity.custom.TerracottaGolemEntity;
 import net.minecraftforge.client.event.EntityRenderersEvent;
@@ -16,6 +17,7 @@ public class ModBusEvents {
     @SubscribeEvent
     public static void registerLayers(final EntityRenderersEvent.RegisterLayerDefinitions event) {
         event.registerLayerDefinition(ModModelsLayers.AIR_SHIP_LAYER, AirShipModel::createBodyLayer);
+        event.registerLayerDefinition(ModModelsLayers.BULLET_ROUND_LAYER, BulletRoundModel::createBodyLayer);
     }
 
     @SubscribeEvent

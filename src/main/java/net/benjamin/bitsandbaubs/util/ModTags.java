@@ -21,6 +21,7 @@ public class ModTags {
 
     public static class Items {
         public static final TagKey<Item> CORRUPTED_LOGS = itemTag("corrupted_logs");
+        public static final TagKey<Item> BULLET_ROUND = itemTag("bullet_round");
 
         private static TagKey<Item> itemTag(String name) {
             return ItemTags.create(new ResourceLocation(BitsAndBaubs.MOD_ID, name));

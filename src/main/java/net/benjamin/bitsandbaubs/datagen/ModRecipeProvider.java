@@ -268,6 +268,24 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.JADE.get()), has(ModItems.JADE.get()))
                 .save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FLINTLOCK_PISTOL.get())
+                .pattern("CFI")
+                .pattern("OOO")
+                .pattern("I  ")
+                .define('F', Items.FLINT_AND_STEEL)
+                .define('C', Items.COPPER_INGOT)
+                .define('I', Items.IRON_INGOT)
+                .define('O', Items.OAK_PLANKS)
+                .unlockedBy(getHasName(Items.FLINT_AND_STEEL), has(Items.FLINT_AND_STEEL))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BULLET_ROUND.get(), 8)
+                .requires(Items.IRON_INGOT)
+                .requires(Items.GUNPOWDER)
+                .requires(Items.WHITE_WOOL)
+                .unlockedBy(getHasName(Items.GUNPOWDER), has(Items.GUNPOWDER))
+                .save(pRecipeOutput);
+
         stonecuttingRecipe(pRecipeOutput, RecipeCategory.MISC, ModBlocks.JADE_BLOCK.get(), ModBlocks.JADE_BRICKS.get());
         stonecuttingRecipe(pRecipeOutput, RecipeCategory.MISC, ModBlocks.JADE_BLOCK.get(), ModBlocks.JADE_STAIRS.get());
         stonecuttingRecipe(pRecipeOutput, RecipeCategory.MISC, ModBlocks.JADE_BLOCK.get(), ModBlocks.JADE_BRICK_STAIRS.get());

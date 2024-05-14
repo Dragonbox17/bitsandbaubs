@@ -1,4 +1,5 @@
-// 1.20.1	2024-05-12T08:31:04.1862414	Tags for minecraft:item mod id bitsandbaubs
+// 1.20.1	2024-05-13T18:09:58.3693	Tags for minecraft:item mod id bitsandbaubs
+12f91d7fa7cb010522e0333338a813547a0a265e data/bitsandbaubs/tags/items/bullet_round.json
 b50aa64b03ae5ab4d14f1a6e7b221250c43a752f data/bitsandbaubs/tags/items/corrupted_logs.json
 bdde22b5c2ea4c30b2681a84b8f32ac3a84df10a data/minecraft/tags/items/leaves.json
 b50aa64b03ae5ab4d14f1a6e7b221250c43a752f data/minecraft/tags/items/logs_that_burn.json
