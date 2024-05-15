@@ -153,7 +153,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         planksFromLogs(pRecipeOutput, ModBlocks.INFECTED_PLANKS.get(), ModTags.Items.CORRUPTED_LOGS, 4);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.JADE_OAK_STAFF.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.JADE_STAFF.get())
                 .pattern("  J")
                 .pattern(" O ")
                 .pattern("J  ")
@@ -361,6 +361,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('J', ModItems.JADE.get())
                 .define('G', Items.GOLDEN_BOOTS)
                 .unlockedBy(getHasName(ModItems.JADE.get()), has(ModItems.JADE.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.EMERALD_STAFF.get())
+                .pattern(" GE")
+                .pattern(" SG")
+                .pattern("G  ")
+                .define('E', Items.EMERALD)
+                .define('G', Items.GOLD_INGOT)
+                .define('S', Items.SPRUCE_PLANKS)
+                .unlockedBy(getHasName(Items.EMERALD), has(Items.EMERALD))
                 .save(pRecipeOutput);
 
 

@@ -4,10 +4,7 @@ import net.benjamin.bitsandbaubs.BitsAndBaubs;
 import net.benjamin.bitsandbaubs.block.ModBlocks;
 import net.benjamin.bitsandbaubs.entity.ModEntities;
 import net.benjamin.bitsandbaubs.entity.custom.AirShipEntity;
-import net.benjamin.bitsandbaubs.item.custom.BulletRoundItem;
-import net.benjamin.bitsandbaubs.item.custom.FlintlockItem;
-import net.benjamin.bitsandbaubs.item.custom.JadeStaffItem;
-import net.benjamin.bitsandbaubs.item.custom.WardItem;
+import net.benjamin.bitsandbaubs.item.custom.*;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.*;
 import net.minecraftforge.common.ForgeSpawnEggItem;
@@ -115,8 +112,12 @@ public class ModItems {
                     () -> new ArmorItem(ModArmorMaterials.JADE, ArmorItem.Type.BOOTS, new Item.Properties()));
 
 
-    public static final RegistryObject<Item> JADE_OAK_STAFF =
-            ITEMS.register("jade_oak_staff", () -> new JadeStaffItem(new Item.Properties().stacksTo(1).defaultDurability(324)));
+    public static final RegistryObject<Item> JADE_STAFF =
+            ITEMS.register("jade_staff", () -> new JadeStaffItem(new Item.Properties().stacksTo(1).defaultDurability(324)));
+
+    public static final RegistryObject<Item> EMERALD_STAFF =
+            ITEMS.register("emerald_staff", () -> new EmeraldStaffItem(new Item.Properties().stacksTo(1).defaultDurability(24)));
+
 
     public static final RegistryObject<Item> CORRUPTED_SIGN =
             ITEMS.register("infected_sign", () -> new SignItem(new Item.Properties().stacksTo(16)

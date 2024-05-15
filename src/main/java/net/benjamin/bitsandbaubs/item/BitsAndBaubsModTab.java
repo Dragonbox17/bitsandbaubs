@@ -43,7 +43,8 @@ public class BitsAndBaubsModTab {
                 pOutput.accept(ModItems.JADE_LEGGINGS.get());
                 pOutput.accept(ModItems.JADE_BOOTS.get());
 
-                pOutput.accept(ModItems.JADE_OAK_STAFF.get());
+                pOutput.accept(ModItems.JADE_STAFF.get());
+                pOutput.accept(ModItems.EMERALD_STAFF.get());
 
                 pOutput.accept(ModItems.PLATINUM_PICKAXE.get());
                 pOutput.accept(ModItems.PLATINUM_AXE.get());

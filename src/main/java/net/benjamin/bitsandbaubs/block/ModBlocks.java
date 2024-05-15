@@ -283,6 +283,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> BLACK_BERRY_BUSH_BLOCK =
             registerBlock("black_berry_bush_block", () -> new BlackBerryBushBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noOcclusion().noCollission()));
 
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
