@@ -1,5 +1,6 @@
-// 1.20.1	2024-05-12T08:31:04.1912429	Block States: bitsandbaubs
+// 1.20.1	2024-05-14T16:02:25.8086463	Block States: bitsandbaubs
 530d367390ad83d515b75fba08863a7fc466661a assets/bitsandbaubs/blockstates/alchemy_table.json
+77095eb241f88e4bdb6269c586533a976c1d6946 assets/bitsandbaubs/blockstates/black_berry_bush_block.json
 f9764b873ac7e5c71968ad439cb07bd0f347dfb3 assets/bitsandbaubs/blockstates/deepslate_jade_ore.json
 a24a2720f4a8f2dca4bc826f3464ff82de3c683d assets/bitsandbaubs/blockstates/infected_button.json
 4fc9bc9e2d88dba70bf08a2b43ffbbc001b872e9 assets/bitsandbaubs/blockstates/infected_door.json
@@ -32,6 +33,10 @@ f6425ef497e9acc7aa70026fdfa8bea4a451e74b assets/bitsandbaubs/blockstates/jade_wa
 a289aecc460f685291b7d65669897d289c54146f assets/bitsandbaubs/blockstates/shoji.json
 e6f9e67955ab6d3f2c635233ed157f75cca9d8c5 assets/bitsandbaubs/blockstates/stripped_infected_log.json
 bceefa81f4090022b1ae215e9957f89aab8ef001 assets/bitsandbaubs/blockstates/stripped_infected_wood.json
+3d2c40cc5b0ce30b3a2faabfb1e358b27a0125f7 assets/bitsandbaubs/models/block/black_berry_bush_stage0.json
+959074c6192b0c1f797c60c4f700583f45737b12 assets/bitsandbaubs/models/block/black_berry_bush_stage1.json
+5b07acb76e8fcf0ac06b134ee44f56c8d5f9bff6 assets/bitsandbaubs/models/block/black_berry_bush_stage2.json
+e2da7353c805befde63ecbaefb1c409770d28558 assets/bitsandbaubs/models/block/black_berry_bush_stage3.json
 c9cd8845e9f88252a61fcc44e93f3f1e20a69cc6 assets/bitsandbaubs/models/block/deepslate_jade_ore.json
 116280be1bffbd87719b61003f440ff1544453cb assets/bitsandbaubs/models/block/infected_button.json
 f748619c99fea76eaeb32903f8ca736df7901b5f assets/bitsandbaubs/models/block/infected_button_pressed.json

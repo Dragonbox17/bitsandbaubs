@@ -17,6 +17,11 @@
   "item.bitsandbaubs.jade_sword": "Jade Sword",
   "item.bitsandbaubs.jade_hoe": "Jade Hoe",
 
+  "item.bitsandbaubs.jade_helmet": "Jade Helmet",
+  "item.bitsandbaubs.jade_chestplate": "Jade ChestPlate",
+  "item.bitsandbaubs.jade_leggings": "Jade Leggings",
+  "item.bitsandbaubs.jade_boots": "Jade Boots",
+
   "item.bitsandbaubs.jade_oak_staff": "Jade Oak Staff",
 
   "item.bitsandbaubs.raw_platinum": "Raw Platinum",
@@ -73,6 +78,9 @@
 
   "item.bitsandbaubs.flintlock_pistol": "Flintlock Pistol",
   "item.bitsandbaubs.bullet_round": "Bullet Round",
+
+  "item.bitsandbaubs.ambrosia": "Ambrosia",
+  "item.bitsandbaubs.black_berries": "Black Berries",
 
   "block.bitsandbaubs.shoji": "Shoji",
 

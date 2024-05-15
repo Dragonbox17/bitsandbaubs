@@ -2,6 +2,7 @@ package net.benjamin.bitsandbaubs.datagen;
 
 import net.benjamin.bitsandbaubs.BitsAndBaubs;
 import net.benjamin.bitsandbaubs.block.ModBlocks;
+import net.benjamin.bitsandbaubs.item.ModFoods;
 import net.benjamin.bitsandbaubs.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceKey;
@@ -103,6 +104,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.JADE_CLUB);
         handheldItem(ModItems.JADE_HOE);
 
+        simpleItem(ModItems.JADE_HELMET);
+        simpleItem(ModItems.JADE_CHESTPLATE);
+        simpleItem(ModItems.JADE_LEGGINGS);
+        simpleItem(ModItems.JADE_BOOTS);
+
         simpleItem(ModItems.RAW_PLATINUM);
         simpleItem(ModItems.PLATINUM_NUGGET);
         simpleItem(ModItems.PLATINUM_INGOT);
@@ -149,6 +155,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.WITHER_SKELETON_WARD);
 
         simpleItem(ModItems.BULLET_ROUND);
+
+        simpleItem(ModItems.AMBROSIA);
+
+        simpleItem(ModItems.BLACK_BERRIES);
     }
 
     private ItemModelBuilder handheldItem(RegistryObject<Item> item) {

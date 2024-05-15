@@ -38,6 +38,11 @@ public class BitsAndBaubsModTab {
                 pOutput.accept(ModItems.JADE_CLUB.get());
                 pOutput.accept(ModItems.JADE_HOE.get());
 
+                pOutput.accept(ModItems.JADE_HELMET.get());
+                pOutput.accept(ModItems.JADE_CHESTPLATE.get());
+                pOutput.accept(ModItems.JADE_LEGGINGS.get());
+                pOutput.accept(ModItems.JADE_BOOTS.get());
+
                 pOutput.accept(ModItems.JADE_OAK_STAFF.get());
 
                 pOutput.accept(ModItems.PLATINUM_PICKAXE.get());
@@ -101,6 +106,10 @@ public class BitsAndBaubsModTab {
                 pOutput.accept(ModItems.BULLET_ROUND.get());
 
                 pOutput.accept(ModBlocks.SHOJI.get());
+
+                pOutput.accept(ModItems.AMBROSIA.get());
+
+                pOutput.accept(ModItems.BLACK_BERRIES.get());
             })
             .build());
 

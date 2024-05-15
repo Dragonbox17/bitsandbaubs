@@ -1,5 +1,6 @@
-// 1.20.1	2024-05-12T08:31:04.1882425	Loot Tables
+// 1.20.1	2024-05-14T15:20:38.053899	Loot Tables
 f63caca113388f7307f7d43ab05d0c7c375de34c data/bitsandbaubs/loot_tables/blocks/alchemy_table.json
+af8c562d2ce51e1826163d2e1a978fa13e4b394e data/bitsandbaubs/loot_tables/blocks/black_berry_bush_block.json
 094bc43ba1358199770289e997fbda59d5762351 data/bitsandbaubs/loot_tables/blocks/deepslate_jade_ore.json
 ffc874e4cdb34c76d1e5d94c4625ef303da75fdd data/bitsandbaubs/loot_tables/blocks/infected_button.json
 b0748c1fc48f1266f3f9ae9ac629cc22180db1e0 data/bitsandbaubs/loot_tables/blocks/infected_door.json

@@ -1,7 +1,8 @@
-// 1.20.1	2024-05-14T10:28:17.0664445	Recipes
+// 1.20.1	2024-05-14T12:16:28.6337457	Recipes
 1bcb25a1097b612e239fea64cd5bf76140404ec6 data/bitsandbaubs/advancements/recipes/building_blocks/infected_planks.json
 68f626b1028d777f1fa2255d51e9a0fd5ac697de data/bitsandbaubs/advancements/recipes/misc/air_balloon.json
 a8cbddd32eb262072a191479dc4a100dadb87a14 data/bitsandbaubs/advancements/recipes/misc/alchemy_table.json
+bb3ca6fe1a8dd53d51d11342443a40076245e0eb data/bitsandbaubs/advancements/recipes/misc/ambrosia.json
 704fa638146c19284e5972b00fc51f5bf9dac32f data/bitsandbaubs/advancements/recipes/misc/bullet_round.json
 dee1584066a72aab5fdf393cb88cb0da263ade77 data/bitsandbaubs/advancements/recipes/misc/creeper_ward.json
 08bc276704e6e8f463b049b081a71b3f5bad740c data/bitsandbaubs/advancements/recipes/misc/engine.json
@@ -32,6 +33,7 @@ a1b65c2bbbed1000cb0c7cb39a5200e840763dee data/bitsandbaubs/advancements/recipes/
 887231ba68194336277e0689dc87a766b52f55fc data/bitsandbaubs/advancements/recipes/misc/zombified_piglin_ward.json
 2564895103640e5cb065153bfcfb2526fe337ff8 data/bitsandbaubs/recipes/air_balloon.json
 05065f50f5ce611a32dcb1e20bc8d36bd95e9ae6 data/bitsandbaubs/recipes/alchemy_table.json
+c1cf90e4e3e78915dfec6cc4f02f192bbf56571c data/bitsandbaubs/recipes/ambrosia.json
 4a380eca12acd1f89cc413511fb5fc5fc158dbed data/bitsandbaubs/recipes/bullet_round.json
 37533a173ae4b6a54cec5155e0439d0e63486b1b data/bitsandbaubs/recipes/creeper_ward.json
 cbb779293d2ef186e61881a6e01dd4a0e1c328f9 data/bitsandbaubs/recipes/engine.json

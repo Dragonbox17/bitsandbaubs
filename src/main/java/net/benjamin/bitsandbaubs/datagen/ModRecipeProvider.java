@@ -279,6 +279,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.FLINT_AND_STEEL), has(Items.FLINT_AND_STEEL))
                 .save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.AMBROSIA.get())
+                .pattern("GGG")
+                .pattern("GBG")
+                .pattern("GGG")
+                .define('G', Items.GOLD_INGOT)
+                .define('B', Items.BREAD)
+                .unlockedBy(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
+                .save(pRecipeOutput);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BULLET_ROUND.get(), 8)
                 .requires(Items.IRON_INGOT)
                 .requires(Items.GUNPOWDER)

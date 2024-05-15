@@ -97,6 +97,24 @@ public class ModItems {
             ITEMS.register("jade_hoe",
                     () -> new HoeItem(ModToolTiers.JADE, 0, 1, new Item.Properties()));
 
+
+    public static final RegistryObject<Item> JADE_HELMET =
+            ITEMS.register("jade_helmet",
+                    () -> new ArmorItem(ModArmorMaterials.JADE, ArmorItem.Type.HELMET, new Item.Properties()));
+
+    public static final RegistryObject<Item> JADE_CHESTPLATE =
+            ITEMS.register("jade_chestplate",
+                    () -> new ArmorItem(ModArmorMaterials.JADE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+
+    public static final RegistryObject<Item> JADE_LEGGINGS =
+            ITEMS.register("jade_leggings",
+                    () -> new ArmorItem(ModArmorMaterials.JADE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+
+    public static final RegistryObject<Item> JADE_BOOTS =
+            ITEMS.register("jade_boots",
+                    () -> new ArmorItem(ModArmorMaterials.JADE, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+
     public static final RegistryObject<Item> JADE_OAK_STAFF =
             ITEMS.register("jade_oak_staff", () -> new JadeStaffItem(new Item.Properties().stacksTo(1).defaultDurability(324)));
 
@@ -125,6 +143,12 @@ public class ModItems {
 
     public static final RegistryObject<Item> FLINTLOCK_PISTOL =
             ITEMS.register("flintlock_pistol", () -> new FlintlockItem(new Item.Properties().defaultDurability(300)));
+
+    public static final RegistryObject<Item> AMBROSIA =
+            ITEMS.register("ambrosia", () -> new Item(new Item.Properties().food(ModFoods.AMBROSIA)));
+
+    public static final RegistryObject<Item> BLACK_BERRIES = ITEMS.register("black_berries",
+            () -> new ItemNameBlockItem(ModBlocks.BLACK_BERRY_BUSH_BLOCK.get(), new Item.Properties().food(ModFoods.BLACK_BERRIES)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -1,5 +1,7 @@
-// 1.20.1	2024-05-13T18:09:58.373292	Item Models: bitsandbaubs
+// 1.20.1	2024-05-15T10:36:18.3099687	Item Models: bitsandbaubs
 b6d3b2e7f50b0f85cab97d7012c27f0ca2fc4636 assets/bitsandbaubs/models/item/air_balloon.json
+93ceae9bf0cfc51f620abfd807535dc1bf470e3f assets/bitsandbaubs/models/item/ambrosia.json
+6979495ed8462561946b45f06cc15f066beec89a assets/bitsandbaubs/models/item/black_berries.json
 d8c75b8d67f5aacc151353ae3308fa8b41827920 assets/bitsandbaubs/models/item/bullet_round.json
 0bb1ceae42bc655dfb56f410f6830cedb6627065 assets/bitsandbaubs/models/item/creeper_ward.json
 d43b512f300a514fe914689cb140143516e69f74 assets/bitsandbaubs/models/item/engine.json
@@ -16,11 +18,15 @@ e48412333f076943e1ba857ccd08f248847ff221 assets/bitsandbaubs/models/item/infecte
 9a8106b491cbeda41414a650f08915cfbb147327 assets/bitsandbaubs/models/item/infected_trapdoor.json
 70d7864cb824f54d5e8caf013538d80c98f88b29 assets/bitsandbaubs/models/item/jade.json
 e5ee61974eed31f57a500be566330df8a43bcc1a assets/bitsandbaubs/models/item/jade_axe.json
+e23434d41844c29196b78b7c7f418bd02a76757b assets/bitsandbaubs/models/item/jade_boots.json
 10b6919c111b2046415c776ac1f78e0ad338f81a assets/bitsandbaubs/models/item/jade_brick_slab.json
 11330c58be1fbf8ad3492e850f1b003cb9097dc2 assets/bitsandbaubs/models/item/jade_brick_stairs.json
 06801a88603dbab75e9fde2eefcf03e25356b2a6 assets/bitsandbaubs/models/item/jade_brick_wall.json
+469e7240e09cdbe4a4ec706acb77962742aa3ff8 assets/bitsandbaubs/models/item/jade_chestplate.json
 d9aeee090edacb03c67b6f55737cf48f93a2c330 assets/bitsandbaubs/models/item/jade_club.json
+4495da705381d52d5fc76d1eb5d55c8d22c3ba90 assets/bitsandbaubs/models/item/jade_helmet.json
 1792d45cb00babf85037c37506874b64aa05ccc0 assets/bitsandbaubs/models/item/jade_hoe.json
+23686a2e85cea5c2d1b7a2c83237bbe2d9709aa8 assets/bitsandbaubs/models/item/jade_leggings.json
 5ce75b4191f3a9bbd787a1d1e26f95dfa80d6668 assets/bitsandbaubs/models/item/jade_pickaxe.json
 b08db564e9b696a73a02f4f9de62794049f59cda assets/bitsandbaubs/models/item/jade_shovel.json
 f2c00f9b0414559a131a2424f61822d0b9c2c561 assets/bitsandbaubs/models/item/jade_slab.json

@@ -12,7 +12,10 @@ import java.util.function.Supplier;
 public enum ModArmorMaterials implements ArmorMaterial {
     PLATINUM("platinum", 20, new int[]{3, 8, 6, 3},
             25, SoundEvents.ARMOR_EQUIP_GOLD, 1f,
-            0f, () -> Ingredient.of(ModItems.PLATINUM_INGOT.get()));
+            0f, () -> Ingredient.of(ModItems.PLATINUM_INGOT.get())),
+    JADE("jade", 15, new int[]{2, 6, 4, 2},
+            30, SoundEvents.ARMOR_EQUIP_GOLD, 1f,
+            0f, () -> Ingredient.of(ModItems.JADE.get()));
 
     private final String name;
     private final int durabilityMultiplier;

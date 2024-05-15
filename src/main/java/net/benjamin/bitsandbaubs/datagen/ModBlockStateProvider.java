@@ -2,14 +2,19 @@ package net.benjamin.bitsandbaubs.datagen;
 
 import net.benjamin.bitsandbaubs.BitsAndBaubs;
 import net.benjamin.bitsandbaubs.block.ModBlocks;
+import net.benjamin.bitsandbaubs.block.custom.BlackBerryBushBlock;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.util.function.Function;
 
 public class ModBlockStateProvider extends BlockStateProvider {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
@@ -72,6 +77,22 @@ public class ModBlockStateProvider extends BlockStateProvider {
         hangingSignBlock(ModBlocks.INFECTED_HANGING_SIGN.get(), ModBlocks.INFECTED_WALL_HANGING_SIGN.get(), blockTexture(ModBlocks.INFECTED_PLANKS.get()));
 
         blockWithItem(ModBlocks.SHOJI);
+
+        makeBlackberryBush((BushBlock) ModBlocks.BLACK_BERRY_BUSH_BLOCK.get(), "black_berry_bush_stage", "black_berry_bush_stage");
+    }
+
+    public void makeBlackberryBush(BushBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> blackberryStates(state, block, modelName, textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+
+    private ConfiguredModel[] blackberryStates(BlockState state, BushBlock block, String modelName, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().cross(modelName + state.getValue(((BlackBerryBushBlock) block).AGE),
+                new ResourceLocation(BitsAndBaubs.MOD_ID, "block/" + textureName + state.getValue(((BlackBerryBushBlock) block).AGE))).renderType("cutout"));
+
+        return models;
     }
 
     public void hangingSignBlock(Block signBlock, Block wallSignBlock, ResourceLocation texture) {
