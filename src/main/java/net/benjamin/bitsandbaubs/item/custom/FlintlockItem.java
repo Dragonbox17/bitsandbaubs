@@ -48,11 +48,11 @@ public class FlintlockItem extends ProjectileWeaponItem implements Vanishable {
     @Override
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pHand) {
         ItemStack itemStack = pPlayer.getItemInHand(pHand);
-        if(getCharged(itemStack)) {
+        if(getCharged(itemStack) && pHand == InteractionHand.MAIN_HAND) {
             performShooting(pLevel, pPlayer, pHand, itemStack, getShootingPower(), 1.0F);
             setCharged(itemStack, false);
             return InteractionResultHolder.success(itemStack);
-        } else if (!pPlayer.getProjectile(itemStack).isEmpty()) {
+        } else if (!pPlayer.getProjectile(itemStack).isEmpty() && pHand == InteractionHand.MAIN_HAND) {
             this.startSoundPlayed = false;
             pPlayer.startUsingItem(pHand);
             return InteractionResultHolder.consume(itemStack);

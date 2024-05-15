@@ -34,7 +34,7 @@ public class JadeStaffItem extends Item implements Vanishable {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pHand) {
-        if (!pLevel.isClientSide && useTime >= 30) {
+        if (!pLevel.isClientSide && useTime >= 30 && pHand == InteractionHand.MAIN_HAND) {
             shootProjectile(pLevel, pPlayer, 10, 5F, 5F, 0);
 
             useTime = 0;
