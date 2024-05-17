@@ -1,10 +1,11 @@
-// 1.20.1	2024-05-15T10:36:18.3099687	Item Models: bitsandbaubs
+// 1.20.1	2024-05-17T14:46:03.0587052	Item Models: bitsandbaubs
 b6d3b2e7f50b0f85cab97d7012c27f0ca2fc4636 assets/bitsandbaubs/models/item/air_balloon.json
 93ceae9bf0cfc51f620abfd807535dc1bf470e3f assets/bitsandbaubs/models/item/ambrosia.json
 6979495ed8462561946b45f06cc15f066beec89a assets/bitsandbaubs/models/item/black_berries.json
 d8c75b8d67f5aacc151353ae3308fa8b41827920 assets/bitsandbaubs/models/item/bullet_round.json
 0bb1ceae42bc655dfb56f410f6830cedb6627065 assets/bitsandbaubs/models/item/creeper_ward.json
 d43b512f300a514fe914689cb140143516e69f74 assets/bitsandbaubs/models/item/engine.json
+a6fa42ee631647cdd1b437372f46fd5956af67f5 assets/bitsandbaubs/models/item/golden_scythe.json
 bbc8a2afa1f73a8381f0c64c5d39c1934ad430f9 assets/bitsandbaubs/models/item/infected_button.json
 730cb449b3d366775130eea9a0bc8bbf69fe5fb9 assets/bitsandbaubs/models/item/infected_door.json
 884a1365bdbd20345cc8d1d1e62d075546d09347 assets/bitsandbaubs/models/item/infected_fence.json
@@ -16,6 +17,7 @@ d337847d6defb454010a940ba1dad2a939dbeaa7 assets/bitsandbaubs/models/item/infecte
 e48412333f076943e1ba857ccd08f248847ff221 assets/bitsandbaubs/models/item/infected_slab.json
 5054547b66f75bd56ddea3d140aa22e5c2bcbec5 assets/bitsandbaubs/models/item/infected_stairs.json
 9a8106b491cbeda41414a650f08915cfbb147327 assets/bitsandbaubs/models/item/infected_trapdoor.json
+7acfac17e7c84b83ab459eb014232e5f7d982b5e assets/bitsandbaubs/models/item/iron_scythe.json
 70d7864cb824f54d5e8caf013538d80c98f88b29 assets/bitsandbaubs/models/item/jade.json
 e5ee61974eed31f57a500be566330df8a43bcc1a assets/bitsandbaubs/models/item/jade_axe.json
 e23434d41844c29196b78b7c7f418bd02a76757b assets/bitsandbaubs/models/item/jade_boots.json
@@ -82,10 +84,15 @@ a10502b7cdc6ce7ae878ac4b1a4b74d56e5e108a assets/bitsandbaubs/models/item/platinu
 2cb5d6745ea808142b59b0b82be4d71e1b32dac3 assets/bitsandbaubs/models/item/platinum_leggings_redstone_trim.json
 0ec84a454dcddd83c22fcb6794caac208cab52f9 assets/bitsandbaubs/models/item/platinum_nugget.json
 9cdb990bcdd853217d8b342d48c5bbbf7a93f5d3 assets/bitsandbaubs/models/item/platinum_pickaxe.json
+43c45459c2b67b406c575f60712835822e257650 assets/bitsandbaubs/models/item/platinum_scythe.json
 eabf02651881c32de2e99146c61c7479a6e332d4 assets/bitsandbaubs/models/item/platinum_shovel.json
 3fd53ae6b53aad23a4b107f100b22fd1eb0740fe assets/bitsandbaubs/models/item/platinum_sword.json
 0bb94ae8bd70ebcfe6370ace068976da7f16c5cc assets/bitsandbaubs/models/item/propeller.json
 9758ccccf4587d53675bf332fef35f8a415f259a assets/bitsandbaubs/models/item/raw_platinum.json
+3c8c6701b178f29ab4ab6c9e4bd8518317d9172e assets/bitsandbaubs/models/item/scythe_of_autumn.json
+f5434b3c80ce38012f80bddb94748bbeb895bcb2 assets/bitsandbaubs/models/item/scythe_of_spring.json
+ab7c0044d1083adae00ba7b86a0b655c1b8acfe7 assets/bitsandbaubs/models/item/scythe_of_summer.json
+76e95a867d5491c9e98faa7f6cf528118d32429e assets/bitsandbaubs/models/item/scythe_of_winter.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/bitsandbaubs/models/item/terracotta_golem_spawn_egg.json
 9a675b57882beddde08109c33021de07b0773fc5 assets/bitsandbaubs/models/item/wither_skeleton_ward.json
 f89bc633f4417f970b77cd502133bea969cef7ad assets/bitsandbaubs/models/item/zombie_ward.json

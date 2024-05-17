@@ -111,6 +111,15 @@ public class BitsAndBaubsModTab {
                 pOutput.accept(ModItems.AMBROSIA.get());
 
                 pOutput.accept(ModItems.BLACK_BERRIES.get());
+
+                pOutput.accept(ModItems.IRON_SCYTHE.get());
+                pOutput.accept(ModItems.GOLDEN_SCYTHE.get());
+                pOutput.accept(ModItems.PLATINUM_SCYTHE.get());
+
+                pOutput.accept(ModItems.SCYTHE_OF_SPRING.get());
+                pOutput.accept(ModItems.SCYTHE_OF_SUMMER.get());
+                pOutput.accept(ModItems.SCYTHE_OF_AUTUMN.get());
+                pOutput.accept(ModItems.SCYTHE_OF_WINTER.get());
             })
             .build());
 

@@ -29,10 +29,10 @@ public class ModItems {
                     () -> new PickaxeItem(ModToolTiers.PLATINUM, 1, -3, new Item.Properties()));
     public static final RegistryObject<Item> PLATINUM_AXE =
             ITEMS.register("platinum_axe",
-                    () -> new AxeItem(ModToolTiers.PLATINUM, 6, 1, new Item.Properties()));
+                    () -> new AxeItem(ModToolTiers.PLATINUM, 6, -3, new Item.Properties()));
     public static final RegistryObject<Item> PLATINUM_SHOVEL =
             ITEMS.register("platinum_shovel",
-                    () -> new ShovelItem(ModToolTiers.PLATINUM, 1, 1, new Item.Properties()));
+                    () -> new ShovelItem(ModToolTiers.PLATINUM, 1, -3, new Item.Properties()));
     public static final RegistryObject<Item> PLATINUM_SWORD =
             ITEMS.register("platinum_sword",
                     () -> new SwordItem(ModToolTiers.PLATINUM, 5, -2, new Item.Properties()));
@@ -80,13 +80,13 @@ public class ModItems {
 
     public static final RegistryObject<Item> JADE_PICKAXE =
             ITEMS.register("jade_pickaxe",
-                    () -> new PickaxeItem(ModToolTiers.JADE, 1, 2, new Item.Properties()));
+                    () -> new PickaxeItem(ModToolTiers.JADE, 1, -3, new Item.Properties()));
     public static final RegistryObject<Item> JADE_AXE =
             ITEMS.register("jade_axe",
-                    () -> new AxeItem(ModToolTiers.JADE, 6, 1, new Item.Properties()));
+                    () -> new AxeItem(ModToolTiers.JADE, 6, -3, new Item.Properties()));
     public static final RegistryObject<Item> JADE_SHOVEL =
             ITEMS.register("jade_shovel",
-                    () -> new ShovelItem(ModToolTiers.JADE, 1, 1, new Item.Properties()));
+                    () -> new ShovelItem(ModToolTiers.JADE, 1, -3, new Item.Properties()));
     public static final RegistryObject<Item> JADE_CLUB =
             ITEMS.register("jade_club",
                     () -> new SwordItem(ModToolTiers.JADE, 6, -3F, new Item.Properties()));
@@ -150,6 +150,34 @@ public class ModItems {
 
     public static final RegistryObject<Item> BLACK_BERRIES = ITEMS.register("black_berries",
             () -> new ItemNameBlockItem(ModBlocks.BLACK_BERRY_BUSH_BLOCK.get(), new Item.Properties().food(ModFoods.BLACK_BERRIES)));
+
+    public static final RegistryObject<Item> IRON_SCYTHE =
+            ITEMS.register("iron_scythe",
+                    () -> new ScytheItem(Tiers.IRON, 2, -1F, new Item.Properties().stacksTo(1).defaultDurability(384)));
+
+    public static final RegistryObject<Item> GOLDEN_SCYTHE =
+            ITEMS.register("golden_scythe",
+                    () -> new ScytheItem(Tiers.GOLD, 4, -1F, new Item.Properties().stacksTo(1).defaultDurability(64)));
+
+    public static final RegistryObject<Item> PLATINUM_SCYTHE =
+            ITEMS.register("platinum_scythe",
+                    () -> new ScytheItem(ModToolTiers.PLATINUM, 3, -1F, new Item.Properties().stacksTo(1).defaultDurability(500)));
+
+    public static final RegistryObject<Item> SCYTHE_OF_SPRING =
+            ITEMS.register("scythe_of_spring",
+                    () -> new SpringScytheItem(ModToolTiers.PLATINUM, 3, 0F, new Item.Properties().stacksTo(1).defaultDurability(600)));
+
+    public static final RegistryObject<Item> SCYTHE_OF_SUMMER =
+            ITEMS.register("scythe_of_summer",
+                    () -> new SummerScytheItem(ModToolTiers.PLATINUM, 3, 0F, new Item.Properties().stacksTo(1).defaultDurability(600)));
+
+    public static final RegistryObject<Item> SCYTHE_OF_AUTUMN =
+            ITEMS.register("scythe_of_autumn",
+                    () -> new AutumnScytheItem(ModToolTiers.PLATINUM, 3, 0F, new Item.Properties().stacksTo(1).defaultDurability(600)));
+
+    public static final RegistryObject<Item> SCYTHE_OF_WINTER =
+            ITEMS.register("scythe_of_winter",
+                    () -> new WinterScytheItem(ModToolTiers.PLATINUM, 5, 0F, new Item.Properties().stacksTo(1).defaultDurability(600)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

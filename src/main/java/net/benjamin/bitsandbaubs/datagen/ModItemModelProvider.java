@@ -2,7 +2,6 @@ package net.benjamin.bitsandbaubs.datagen;
 
 import net.benjamin.bitsandbaubs.BitsAndBaubs;
 import net.benjamin.bitsandbaubs.block.ModBlocks;
-import net.benjamin.bitsandbaubs.item.ModFoods;
 import net.benjamin.bitsandbaubs.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceKey;
@@ -159,6 +158,15 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.AMBROSIA);
 
         simpleItem(ModItems.BLACK_BERRIES);
+
+        handheldItem(ModItems.IRON_SCYTHE);
+        handheldItem(ModItems.GOLDEN_SCYTHE);
+        handheldItem(ModItems.PLATINUM_SCYTHE);
+
+        handheldItem(ModItems.SCYTHE_OF_SPRING);
+        handheldItem(ModItems.SCYTHE_OF_SUMMER);
+        handheldItem(ModItems.SCYTHE_OF_AUTUMN);
+        handheldItem(ModItems.SCYTHE_OF_WINTER);
     }
 
     private ItemModelBuilder handheldItem(RegistryObject<Item> item) {

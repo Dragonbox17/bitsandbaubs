@@ -85,5 +85,9 @@
 
   "block.bitsandbaubs.shoji": "Shoji",
 
+  "item.bitsandbaubs.iron_scythe": "Iron Scythe",
+  "item.bitsandbaubs.golden_scythe": "Golden Scythe",
+  "item.bitsandbaubs.platinum_scythe": "Platinum Scythe",
+
   "creativetab.bits_and_baubs_tab": "Bits and Baubs"
 }
