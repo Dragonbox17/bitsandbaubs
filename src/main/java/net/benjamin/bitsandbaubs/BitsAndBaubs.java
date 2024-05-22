@@ -4,9 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.benjamin.bitsandbaubs.block.ModBlocks;
 import net.benjamin.bitsandbaubs.block.entity.ModBlockEntities;
 import net.benjamin.bitsandbaubs.entity.ModEntities;
-import net.benjamin.bitsandbaubs.entity.client.AirShipRenderer;
-import net.benjamin.bitsandbaubs.entity.client.BulletRoundRenderer;
-import net.benjamin.bitsandbaubs.entity.client.TerracottaGolemRenderer;
+import net.benjamin.bitsandbaubs.entity.client.*;
 import net.benjamin.bitsandbaubs.item.BitsAndBaubsModTab;
 import net.benjamin.bitsandbaubs.item.ModItems;
 import net.benjamin.bitsandbaubs.loot.ModLootModifiers;
@@ -96,6 +94,8 @@ public class BitsAndBaubs
             EntityRenderers.register(ModEntities.TERRACOTTA_GOLEM.get(), TerracottaGolemRenderer::new);
             EntityRenderers.register(ModEntities.AIR_SHIP.get(), p_174010_ -> new AirShipRenderer(p_174010_));
             EntityRenderers.register(ModEntities.BULLET_ROUND.get(), p_174010_ -> new BulletRoundRenderer(p_174010_));
+            EntityRenderers.register(ModEntities.CULLAGER.get(), CullagerRenderer::new);
+            EntityRenderers.register(ModEntities.FANG_BEAST.get(), FangBeastRenderer::new);
 
             MenuScreens.register(ModMenuTypes.ALCHEMY_MENU.get(), AlchemyTableScreen::new);
         }

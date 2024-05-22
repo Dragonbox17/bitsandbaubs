@@ -4,9 +4,7 @@ package net.benjamin.bitsandbaubs.event;
 import net.benjamin.bitsandbaubs.BitsAndBaubs;
 import net.benjamin.bitsandbaubs.block.ModBlocks;
 import net.benjamin.bitsandbaubs.block.entity.ModBlockEntities;
-import net.benjamin.bitsandbaubs.entity.client.AirShipModel;
-import net.benjamin.bitsandbaubs.entity.client.ModModelsLayers;
-import net.benjamin.bitsandbaubs.entity.client.TerracottaGolemModel;
+import net.benjamin.bitsandbaubs.entity.client.*;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.minecraftforge.api.distmarker.Dist;
@@ -19,6 +17,8 @@ public class ModEventBusClientEvents {
     @SubscribeEvent
     public static void registerLayer(EntityRenderersEvent.RegisterLayerDefinitions event) {
         event.registerLayerDefinition(ModModelsLayers.TERRACOTTA_GOLEM_LAYER, TerracottaGolemModel::createBodyLayer);
+        event.registerLayerDefinition(ModModelsLayers.FANG_BEAST_LAYER, FangBeastModel::createBodyLayer);
+        event.registerLayerDefinition(ModModelsLayers.CULLAGER_LAYER, CullagerModel::createBodyLayer);
         event.registerLayerDefinition(ModModelsLayers.AIR_SHIP_LAYER, AirShipModel::createBodyLayer);
     }
 

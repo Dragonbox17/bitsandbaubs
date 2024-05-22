@@ -89,5 +89,10 @@
   "item.bitsandbaubs.golden_scythe": "Golden Scythe",
   "item.bitsandbaubs.platinum_scythe": "Platinum Scythe",
 
+  "item.bitsandbaubs.scythe_of_spring": "Scythe of Spring",
+  "item.bitsandbaubs.scythe_of_summer": "Scythe of Summer",
+  "item.bitsandbaubs.scythe_of_autumn": "Scythe of Autumn",
+  "item.bitsandbaubs.scythe_of_winter": "Scythe of Winter",
+
   "creativetab.bits_and_baubs_tab": "Bits and Baubs"
 }

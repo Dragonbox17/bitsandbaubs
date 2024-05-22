@@ -19,4 +19,14 @@ public class ModModelsLayers {
             new ModelLayerLocation(
                     new ResourceLocation(BitsAndBaubs.MOD_ID, "bullet_round_layer"), "main"
             );
+
+    public static final ModelLayerLocation CULLAGER_LAYER =
+            new ModelLayerLocation(
+                    new ResourceLocation(BitsAndBaubs.MOD_ID, "cullager_layer"), "main"
+            );
+
+    public static final ModelLayerLocation FANG_BEAST_LAYER =
+            new ModelLayerLocation(
+                    new ResourceLocation(BitsAndBaubs.MOD_ID, "fang_beast_layer"), "main"
+            );
 }

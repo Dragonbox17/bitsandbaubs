@@ -1,9 +1,7 @@
 package net.benjamin.bitsandbaubs.entity;
 
 import net.benjamin.bitsandbaubs.BitsAndBaubs;
-import net.benjamin.bitsandbaubs.entity.custom.AirShipEntity;
-import net.benjamin.bitsandbaubs.entity.custom.BulletRound;
-import net.benjamin.bitsandbaubs.entity.custom.TerracottaGolemEntity;
+import net.benjamin.bitsandbaubs.entity.custom.*;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.player.Player;
@@ -29,6 +27,14 @@ public class ModEntities {
     public static final RegistryObject<EntityType<AbstractArrow>> BULLET_ROUND =
             ENTITY_TYPES.register("bullet_round", () -> EntityType.Builder.<AbstractArrow>of(BulletRound::new, MobCategory.MISC)
                     .sized(0.1F, 0.1F).build("bullet_round"));
+
+    public static final RegistryObject<EntityType<CullagerEntity>> CULLAGER =
+            ENTITY_TYPES.register("cullager", () -> EntityType.Builder.of(CullagerEntity::new, MobCategory.MONSTER)
+                    .sized(1, 2).build("cullager"));
+
+    public static final RegistryObject<EntityType<FangBeastEntity>> FANG_BEAST =
+            ENTITY_TYPES.register("fang_beast", () -> EntityType.Builder.of(FangBeastEntity::new, MobCategory.MONSTER)
+                    .sized(1F, 2F).build("fang_beast"));
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
