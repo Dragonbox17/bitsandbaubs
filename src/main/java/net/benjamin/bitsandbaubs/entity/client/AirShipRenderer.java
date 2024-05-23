@@ -28,8 +28,6 @@ import java.util.List;
 import java.util.stream.Stream;
 
 public class AirShipRenderer extends EntityRenderer {
-    private static final ResourceLocation AIR_SHIP_TEXTURE =
-            new ResourceLocation(BitsAndBaubs.MOD_ID, "textures/entity/air_ship.png");
     protected final EntityModel<AirShipEntity> model;
 
     public AirShipRenderer(EntityRendererProvider.Context pContext) {
@@ -55,6 +53,7 @@ public class AirShipRenderer extends EntityRenderer {
 
     @Override
     public ResourceLocation getTextureLocation(Entity p_114482_) {
+        ResourceLocation AIR_SHIP_TEXTURE = new ResourceLocation(BitsAndBaubs.MOD_ID, "textures/entity/" + AirShipEntity.getModVariant((AirShipEntity) p_114482_).getName() + ".png");
         return AIR_SHIP_TEXTURE;
     }
 }
