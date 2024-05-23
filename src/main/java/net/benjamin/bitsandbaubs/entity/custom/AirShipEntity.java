@@ -37,20 +37,8 @@ import java.util.function.IntFunction;
 
 public class AirShipEntity extends Boat implements net.minecraftforge.common.extensions.IForgeBoat {
     private static final EntityDataAccessor<Integer> DATA_ID_TYPE = SynchedEntityData.defineId(AirShipEntity.class, EntityDataSerializers.INT);
-    private int lerpSteps;
-    private double lerpX;
-    private double lerpY;
-    private double lerpZ;
-    private double lerpYRot;
-    private double lerpXRot;
-    private boolean inputLeft;
-    private boolean inputRight;
-    private boolean inputUp;
-    private boolean inputDown;
     private float deltaRotation;
-    private double airLevel;
     private float invFriction;
-    private double lastYd;
     private float landFriction;
     private AirShipEntity.Status status;
     private AirShipEntity.Status oldStatus;
@@ -190,23 +178,6 @@ public class AirShipEntity extends Boat implements net.minecraftforge.common.ext
     private void controlShip() {
         if (this.isVehicle()) {
             float f = 0.0F;
-
-            if (this.inputLeft) {
-                --this.deltaRotation;
-            }
-
-            if (this.inputRight) {
-                ++this.deltaRotation;
-            }
-
-            if (this.inputRight != this.inputLeft && !this.inputUp && !this.inputDown) {
-                f += 1F;
-            }
-
-            this.setYRot(this.getYRot() + this.deltaRotation);
-            if (this.inputUp) {
-                f += 0.01F;
-            }
 
             if(Minecraft.getInstance().options.keyJump.isDown()) {
                 if(h < 0.2) {
