@@ -114,7 +114,7 @@ public class FlintlockItem extends ProjectileWeaponItem implements Vanishable {
 
             bulletRound.setPos(forward.x, forward.y, forward.z);
 
-            bulletRound.shootFromRotation(pPlayer, pPlayer.getXRot(), pPlayer.getYRot(), 0.0F, 1.6F * shootingPower, 1.0F);
+            bulletRound.shootFromRotation(pPlayer, pPlayer.getXRot(), pPlayer.getYRot(), 0.0F, shootingPower, 1.0F);
 
             pItemStack.hurtAndBreak(1, pPlayer, (entity) -> entity.broadcastBreakEvent(pHand));
 
