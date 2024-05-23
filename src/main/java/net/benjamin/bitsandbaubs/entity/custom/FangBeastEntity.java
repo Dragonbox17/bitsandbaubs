@@ -25,6 +25,8 @@ import net.minecraft.world.entity.monster.Enemy;
 import net.minecraft.world.entity.npc.AbstractVillager;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.raid.Raider;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
@@ -134,5 +136,15 @@ public class FangBeastEntity extends AbstractGolem {
                 .add(Attributes.ARMOR_TOUGHNESS, 0.2D)
                 .add(Attributes.SPAWN_REINFORCEMENTS_CHANCE, 0.5D)
                 .add(Attributes.ATTACK_DAMAGE, 3D);
+    }
+
+    @Override
+    protected void dropCustomDeathLoot(DamageSource p_21385_, int p_21386_, boolean p_21387_) {
+        super.dropCustomDeathLoot(p_21385_, p_21386_, p_21387_);
+
+        int numOfEmeralds = this.getRandom().nextInt(3) + 1;
+        for(int i = 0; i < numOfEmeralds; i++) {
+            this.spawnAtLocation(new ItemStack(Items.EMERALD));
+        }
     }
 }

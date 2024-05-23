@@ -1,35 +1,35 @@
-[22May2024 17:06:25.013] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\benja\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.2.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, bitsandbaubs, --all, --output, C:\Users\benja\OneDrive\Desktop\bitsandbaubs\src\generated\resources, --existing, C:\Users\benja\OneDrive\Desktop\bitsandbaubs\src\main\resources]
-[22May2024 17:06:25.024] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.7 by Oracle Corporation; OS Windows 11 arch amd64 version 10.0
-[22May2024 17:06:25.147] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
-[22May2024 17:06:25.219] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/benja/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
-[22May2024 17:06:25.615] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\benja\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.2.0\7f9181f85acc66547685a72020713fc8cbde98\javafmllanguage-1.20.1-47.2.0.jar is missing mods.toml file
-[22May2024 17:06:25.621] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\benja\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.2.0\7872f5205685fdd26fae39b1be79b0e60ca5b7bd\lowcodelanguage-1.20.1-47.2.0.jar is missing mods.toml file
-[22May2024 17:06:25.626] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\benja\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.2.0\d501d161cabed08b3c139a2c6217b02a39f3c3e9\mclanguage-1.20.1-47.2.0.jar is missing mods.toml file
-[22May2024 17:06:25.631] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\benja\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.2.0\ffd3c6debac0a388c9e33ac43c9f5eafb91cb466\fmlcore-1.20.1-47.2.0.jar is missing mods.toml file
-[22May2024 17:06:25.712] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[22May2024 17:06:27.727] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\benja\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, bitsandbaubs, --all, --output, C:\Users\benja\OneDrive\Desktop\bitsandbaubs\src\generated\resources, --existing, C:\Users\benja\OneDrive\Desktop\bitsandbaubs\src\main\resources]
-[22May2024 17:06:28.509] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [bitsandbaubs]
-[22May2024 17:06:33.694] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.2.0, for MC 1.20.1 with MCP 20230612.114412
-[22May2024 17:06:33.695] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.2.0 Initialized
-[22May2024 17:06:34.085] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
-[22May2024 17:06:34.105] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 10.24 ms
-[22May2024 17:06:34.842] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/benja/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.0_mapped_official_1.20.1/forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[22May2024 17:06:34.843] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/benja/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.0_mapped_official_1.20.1/forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[22May2024 17:06:35.310] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[22May2024 17:06:35.410] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 98 ms
-[22May2024 17:06:35.411] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[22May2024 17:06:35.489] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 78 ms
-[22May2024 17:06:35.490] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: bitsandbaubs
-[22May2024 17:06:35.712] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: bitsandbaubs finished after 221 ms
-[22May2024 17:06:35.712] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: bitsandbaubs
-[22May2024 17:06:35.747] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: bitsandbaubs finished after 34 ms
-[22May2024 17:06:35.747] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id bitsandbaubs
-[22May2024 17:06:35.799] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id bitsandbaubs finished after 51 ms
-[22May2024 17:06:35.799] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id bitsandbaubs
-[22May2024 17:06:35.802] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id bitsandbaubs finished after 3 ms
-[22May2024 17:06:35.803] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Global Loot Modifiers : bitsandbaubs
-[22May2024 17:06:35.823] [main/INFO] [net.minecraft.data.DataGenerator/]: Global Loot Modifiers : bitsandbaubs finished after 20 ms
-[22May2024 17:06:35.824] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
-[22May2024 17:06:35.843] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 19 ms
-[22May2024 17:06:35.843] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 533 ms
-[22May2024 17:06:35.872] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 373, old count: 373, new count: 374, removed stale: 0, written: 0
+[22May2024 17:51:39.809] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\benja\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.2.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, bitsandbaubs, --all, --output, C:\Users\benja\OneDrive\Desktop\bitsandbaubs\src\generated\resources, --existing, C:\Users\benja\OneDrive\Desktop\bitsandbaubs\src\main\resources]
+[22May2024 17:51:39.819] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.7 by Oracle Corporation; OS Windows 11 arch amd64 version 10.0
+[22May2024 17:51:39.957] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[22May2024 17:51:40.029] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/benja/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[22May2024 17:51:40.412] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\benja\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.2.0\7f9181f85acc66547685a72020713fc8cbde98\javafmllanguage-1.20.1-47.2.0.jar is missing mods.toml file
+[22May2024 17:51:40.417] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\benja\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.2.0\7872f5205685fdd26fae39b1be79b0e60ca5b7bd\lowcodelanguage-1.20.1-47.2.0.jar is missing mods.toml file
+[22May2024 17:51:40.423] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\benja\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.2.0\d501d161cabed08b3c139a2c6217b02a39f3c3e9\mclanguage-1.20.1-47.2.0.jar is missing mods.toml file
+[22May2024 17:51:40.429] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\benja\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.2.0\ffd3c6debac0a388c9e33ac43c9f5eafb91cb466\fmlcore-1.20.1-47.2.0.jar is missing mods.toml file
+[22May2024 17:51:40.516] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[22May2024 17:51:42.363] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\benja\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, bitsandbaubs, --all, --output, C:\Users\benja\OneDrive\Desktop\bitsandbaubs\src\generated\resources, --existing, C:\Users\benja\OneDrive\Desktop\bitsandbaubs\src\main\resources]
+[22May2024 17:51:43.242] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [bitsandbaubs]
+[22May2024 17:51:47.910] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.2.0, for MC 1.20.1 with MCP 20230612.114412
+[22May2024 17:51:47.910] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.2.0 Initialized
+[22May2024 17:51:48.266] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
+[22May2024 17:51:48.281] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 8.752 ms
+[22May2024 17:51:48.841] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/benja/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.0_mapped_official_1.20.1/forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[22May2024 17:51:48.842] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/benja/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.0_mapped_official_1.20.1/forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[22May2024 17:51:49.136] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[22May2024 17:51:49.279] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 141 ms
+[22May2024 17:51:49.280] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[22May2024 17:51:49.388] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 107 ms
+[22May2024 17:51:49.388] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: bitsandbaubs
+[22May2024 17:51:49.587] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: bitsandbaubs finished after 198 ms
+[22May2024 17:51:49.587] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: bitsandbaubs
+[22May2024 17:51:49.619] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: bitsandbaubs finished after 31 ms
+[22May2024 17:51:49.619] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id bitsandbaubs
+[22May2024 17:51:49.654] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id bitsandbaubs finished after 35 ms
+[22May2024 17:51:49.655] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id bitsandbaubs
+[22May2024 17:51:49.657] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id bitsandbaubs finished after 2 ms
+[22May2024 17:51:49.658] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Global Loot Modifiers : bitsandbaubs
+[22May2024 17:51:49.669] [main/INFO] [net.minecraft.data.DataGenerator/]: Global Loot Modifiers : bitsandbaubs finished after 11 ms
+[22May2024 17:51:49.669] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
+[22May2024 17:51:49.693] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 24 ms
+[22May2024 17:51:49.693] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 558 ms
+[22May2024 17:51:49.724] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 374, old count: 374, new count: 375, removed stale: 0, written: 0

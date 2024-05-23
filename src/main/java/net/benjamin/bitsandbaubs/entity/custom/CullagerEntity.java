@@ -1,11 +1,14 @@
 package net.benjamin.bitsandbaubs.entity.custom;
 
+import net.benjamin.bitsandbaubs.entity.ModEntities;
 import net.benjamin.bitsandbaubs.entity.ai.TerracottaGolemAttackGoal;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.Mth;
@@ -19,6 +22,7 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
+import net.minecraft.world.entity.ai.targeting.TargetingConditions;
 import net.minecraft.world.entity.animal.AbstractGolem;
 import net.minecraft.world.entity.animal.IronGolem;
 import net.minecraft.world.entity.monster.*;
@@ -41,6 +45,7 @@ public class CullagerEntity extends SpellcasterIllager {
         super.registerGoals();
         this.goalSelector.addGoal(0, new FloatGoal(this));
         this.goalSelector.addGoal(0, new SpellcasterCastingSpellGoal());
+        this.goalSelector.addGoal(0, new CullagerEntity.CullagerSummonSpellGoal());
         this.goalSelector.addGoal(1, new CullagerEntity.CullagerBlindnessSpellGoal());
         this.goalSelector.addGoal(2, new CullagerEntity.CullagerAttackSpellGoal());
         this.goalSelector.addGoal(2, new AvoidEntityGoal<>(this, Player.class, 8.0F, 0.6D, 1.0D));
@@ -226,6 +231,42 @@ public class CullagerEntity extends SpellcasterIllager {
 
         protected SpellcasterIllager.IllagerSpell getSpell() {
             return SpellcasterIllager.IllagerSpell.BLINDNESS;
+        }
+    }
+
+    class CullagerSummonSpellGoal extends SpellcasterIllager.SpellcasterUseSpellGoal {
+        private final TargetingConditions vexCountTargeting = TargetingConditions.forNonCombat().range(16.0D).ignoreLineOfSight().ignoreInvisibilityTesting();
+
+        public boolean canUse() {
+            if (!super.canUse()) {
+                return false;
+            } else {
+                int i = CullagerEntity.this.level().getNearbyEntities(Vex.class, this.vexCountTargeting, CullagerEntity.this, CullagerEntity.this.getBoundingBox().inflate(16.0D)).size();
+                return CullagerEntity.this.random.nextInt(8) + 1 > i;
+            }
+        }
+
+        protected int getCastingTime() {
+            return 100;
+        }
+
+        protected int getCastingInterval() {
+            return 1000;
+        }
+
+        protected void performSpellCasting() {
+            ServerLevel serverlevel = (ServerLevel)CullagerEntity.this.level();
+            FangBeastEntity fang_beast = new FangBeastEntity(ModEntities.FANG_BEAST.get(), CullagerEntity.this.level());
+            fang_beast.absMoveTo(CullagerEntity.this.getX(), CullagerEntity.this.getY(), CullagerEntity.this.getZ());
+            serverlevel.addFreshEntity(fang_beast);
+        }
+
+        protected SoundEvent getSpellPrepareSound() {
+            return SoundEvents.EVOKER_PREPARE_SUMMON;
+        }
+
+        protected SpellcasterIllager.IllagerSpell getSpell() {
+            return SpellcasterIllager.IllagerSpell.SUMMON_VEX;
         }
     }
 }

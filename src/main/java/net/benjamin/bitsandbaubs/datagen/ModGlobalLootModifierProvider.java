@@ -1,10 +1,13 @@
 package net.benjamin.bitsandbaubs.datagen;
 
 import net.benjamin.bitsandbaubs.BitsAndBaubs;
+import net.benjamin.bitsandbaubs.entity.ModEntities;
 import net.benjamin.bitsandbaubs.item.ModItems;
 import net.benjamin.bitsandbaubs.loot.AddItemModifier;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
