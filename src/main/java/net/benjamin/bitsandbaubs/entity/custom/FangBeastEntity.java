@@ -1,5 +1,6 @@
 package net.benjamin.bitsandbaubs.entity.custom;
 
+import net.benjamin.bitsandbaubs.entity.ModEntities;
 import net.benjamin.bitsandbaubs.entity.ai.FangBeastAttackGoal;
 import net.benjamin.bitsandbaubs.entity.ai.TerracottaGolemAttackGoal;
 import net.minecraft.network.syncher.EntityDataAccessor;
@@ -17,6 +18,7 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.goal.MoveBackToVillageGoal;
 import net.minecraft.world.entity.ai.goal.MoveTowardsTargetGoal;
+import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.animal.AbstractGolem;
@@ -107,10 +109,12 @@ public class FangBeastEntity extends AbstractGolem {
         this.goalSelector.addGoal(0, new FangBeastAttackGoal(this, 1.0D, true));
         this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.0D, true));
         this.goalSelector.addGoal(2, new MoveTowardsTargetGoal(this, 0.9D, 32.0F));
+        this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1.0D));
         this.targetSelector.addGoal(1, (new HurtByTargetGoal(this, Raider.class)).setAlertOthers());
         this.targetSelector.addGoal(2, (new NearestAttackableTargetGoal<>(this, Player.class, true)).setUnseenMemoryTicks(300));
         this.targetSelector.addGoal(3, (new NearestAttackableTargetGoal<>(this, AbstractVillager.class, false)).setUnseenMemoryTicks(300));
         this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, IronGolem.class, false));
+        this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, TerracottaGolemEntity.class, false));
     }
 
     @Override
@@ -127,15 +131,15 @@ public class FangBeastEntity extends AbstractGolem {
     @Nullable
     @Override
     protected SoundEvent getHurtSound(DamageSource p_27517_) {
-        return SoundEvents.STONE_HIT;
+        return SoundEvents.IRON_GOLEM_HURT;
     }
 
     public static AttributeSupplier.Builder createAttributes() {
-        return Mob.createMobAttributes().add(Attributes.MAX_HEALTH, 45D)
+        return Mob.createMobAttributes().add(Attributes.MAX_HEALTH, 50D)
                 .add(Attributes.MOVEMENT_SPEED, 0.3D)
                 .add(Attributes.ARMOR_TOUGHNESS, 0.2D)
                 .add(Attributes.SPAWN_REINFORCEMENTS_CHANCE, 0.5D)
-                .add(Attributes.ATTACK_DAMAGE, 3D);
+                .add(Attributes.ATTACK_DAMAGE, 6D);
     }
 
     @Override

@@ -14,7 +14,7 @@
   "item.bitsandbaubs.jade_pickaxe": "Jade Pickaxe",
   "item.bitsandbaubs.jade_axe": "Jade Axe",
   "item.bitsandbaubs.jade_shovel": "Jade Shovel",
-  "item.bitsandbaubs.jade_sword": "Jade Sword",
+  "item.bitsandbaubs.jade_club": "Jade Club",
   "item.bitsandbaubs.jade_hoe": "Jade Hoe",
 
   "item.bitsandbaubs.jade_helmet": "Jade Helmet",
@@ -41,6 +41,8 @@
   "item.bitsandbaubs.platinum_boots": "Platinum Boots",
 
   "item.bitsandbaubs.terracotta_golem_spawn_egg": "Terracotta Golem Spawn Egg",
+  "item.bitsandbaubs.cullager_spawn_egg": "Cullager Spawn Egg",
+  "item.bitsandbaubs.fang_beast_spawn_egg": "Fang Beast Spawn Egg",
 
   "item.bitsandbaubs.propeller": "Propeller",
   "item.bitsandbaubs.engine": "Engine",

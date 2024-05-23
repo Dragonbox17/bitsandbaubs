@@ -130,6 +130,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.AIR_BALLOON);
 
         withExistingParent(ModItems.TERRACOTTA_GOLEM_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.CULLAGER_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.FANG_BEAST_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
 
         saplingItem(ModBlocks.INFECTED_SAPLING);
 

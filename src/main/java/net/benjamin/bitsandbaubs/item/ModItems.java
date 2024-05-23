@@ -62,6 +62,14 @@ public class ModItems {
             ITEMS.register("terracotta_golem_spawn_egg",
                     () -> new ForgeSpawnEggItem(ModEntities.TERRACOTTA_GOLEM, 0x6f4433, 0x7b4c37, new Item.Properties()));
 
+    public static final RegistryObject<Item> CULLAGER_SPAWN_EGG =
+            ITEMS.register("cullager_spawn_egg",
+                    () -> new ForgeSpawnEggItem(ModEntities.CULLAGER, 0x63cb7d, 0x888e8e, new Item.Properties()));
+
+    public static final RegistryObject<Item> FANG_BEAST_SPAWN_EGG =
+            ITEMS.register("fang_beast_spawn_egg",
+                    () -> new ForgeSpawnEggItem(ModEntities.FANG_BEAST, 0x404646, 0x7bffa3, new Item.Properties()));
+
     public static final RegistryObject<Item> OAK_AIR_SHIP =
             ITEMS.register("oak_air_ship",
                     () -> new AirShipItem(false, AirShipEntity.Type.OAK, new Item.Properties().stacksTo(1)));
