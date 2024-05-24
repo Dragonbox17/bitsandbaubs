@@ -94,6 +94,12 @@ public class BitsAndBaubsModTab {
                 pOutput.accept(ModItems.PROPELLER.get());
                 pOutput.accept(ModItems.ENGINE.get());
                 pOutput.accept(ModItems.AIR_BALLOON.get());
+                pOutput.accept(ModItems.ACACIA_AIR_SHIP.get());
+                pOutput.accept(ModItems.BIRCH_AIR_SHIP.get());
+                pOutput.accept(ModItems.CHERRY_AIR_SHIP.get());
+                pOutput.accept(ModItems.DARK_OAK_AIR_SHIP.get());
+                pOutput.accept(ModItems.JUNGLE_AIR_SHIP.get());
+                pOutput.accept(ModItems.MANGROVE_AIR_SHIP.get());
                 pOutput.accept(ModItems.OAK_AIR_SHIP.get());
                 pOutput.accept(ModItems.SPRUCE_AIR_SHIP.get());
 

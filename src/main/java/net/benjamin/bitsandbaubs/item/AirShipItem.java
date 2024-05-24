@@ -58,8 +58,14 @@ public class AirShipItem extends Item {
                     SpawnerBlockEntity spawnerblockentity = (SpawnerBlockEntity)blockentity;
 
                     EntityType<?> entitytype1 = switch(this.type) {
-                        case SPRUCE -> ModEntities.SPRUCE_AIR_SHIP.get();
+                        case ACACIA -> ModEntities.ACACIA_AIR_SHIP.get();
+                        case BIRCH -> ModEntities.BIRCH_AIR_SHIP.get();
+                        case CHERRY -> ModEntities.CHERRY_AIR_SHIP.get();
+                        case DARK_OAK -> ModEntities.DARK_OAK_AIR_SHIP.get();
+                        case JUNGLE -> ModEntities.JUNGLE_AIR_SHIP.get();
+                        case MANGROVE -> ModEntities.MANGROVE_AIR_SHIP.get();
                         case OAK -> ModEntities.OAK_AIR_SHIP.get();
+                        case SPRUCE -> ModEntities.SPRUCE_AIR_SHIP.get();
                     };
 
                     spawnerblockentity.setEntityId(entitytype1, level.getRandom());
@@ -79,8 +85,14 @@ public class AirShipItem extends Item {
             }
 
             EntityType<?> entitytype = switch(this.type) {
-                case SPRUCE -> ModEntities.SPRUCE_AIR_SHIP.get();
+                case ACACIA -> ModEntities.ACACIA_AIR_SHIP.get();
+                case BIRCH -> ModEntities.BIRCH_AIR_SHIP.get();
+                case CHERRY -> ModEntities.CHERRY_AIR_SHIP.get();
+                case DARK_OAK -> ModEntities.DARK_OAK_AIR_SHIP.get();
+                case JUNGLE -> ModEntities.JUNGLE_AIR_SHIP.get();
+                case MANGROVE -> ModEntities.MANGROVE_AIR_SHIP.get();
                 case OAK -> ModEntities.OAK_AIR_SHIP.get();
+                case SPRUCE -> ModEntities.SPRUCE_AIR_SHIP.get();
             };
 
             AirShipEntity airShipEntity = (AirShipEntity) entitytype.spawn((ServerLevel)pContext.getLevel(), itemstack, pContext.getPlayer(), new BlockPos(blockpos.getX(), blockpos.getY() + 1, blockpos.getZ()), MobSpawnType.TRIGGERED, false, false);
@@ -91,43 +103,6 @@ public class AirShipItem extends Item {
             }
 
             return InteractionResult.CONSUME;
-        }
-    }
-
-    public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pHand) {
-        ItemStack itemstack = pPlayer.getItemInHand(pHand);
-        BlockHitResult blockhitresult = getPlayerPOVHitResult(pLevel, pPlayer, ClipContext.Fluid.SOURCE_ONLY);
-        if (blockhitresult.getType() != HitResult.Type.BLOCK) {
-            return InteractionResultHolder.pass(itemstack);
-        } else if (!(pLevel instanceof ServerLevel)) {
-            return InteractionResultHolder.success(itemstack);
-        } else {
-            BlockPos blockpos = blockhitresult.getBlockPos();
-            if (!(pLevel.getBlockState(blockpos).getBlock() instanceof LiquidBlock)) {
-                return InteractionResultHolder.pass(itemstack);
-            } else if (pLevel.mayInteract(pPlayer, blockpos) && pPlayer.mayUseItemAt(blockpos, blockhitresult.getDirection(), itemstack)) {
-
-                EntityType<?> entitytype = switch(this.type) {
-                    case SPRUCE -> ModEntities.SPRUCE_AIR_SHIP.get();
-                    case OAK -> ModEntities.OAK_AIR_SHIP.get();
-                };
-
-                AirShipEntity entity = (AirShipEntity) entitytype.spawn((ServerLevel)pLevel, itemstack, pPlayer, blockpos, MobSpawnType.TRIGGERED, false, false);
-                if (entity == null) {
-                    return InteractionResultHolder.pass(itemstack);
-                } else {
-                    entity.setModVariant(this.type);
-                    if (!pPlayer.getAbilities().instabuild) {
-                        itemstack.shrink(1);
-                    }
-
-                    pPlayer.awardStat(Stats.ITEM_USED.get(this));
-                    pLevel.gameEvent(pPlayer, GameEvent.ENTITY_PLACE, entity.position());
-                    return InteractionResultHolder.consume(itemstack);
-                }
-            } else {
-                return InteractionResultHolder.fail(itemstack);
-            }
         }
     }
 }

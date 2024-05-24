@@ -58,6 +58,12 @@ public class AirShipEntity extends Boat implements net.minecraftforge.common.ext
     @Override
     public Item getDropItem() {
         return switch (getModVariant(this)) {
+            case ACACIA -> ModItems.ACACIA_AIR_SHIP.get();
+            case BIRCH -> ModItems.BIRCH_AIR_SHIP.get();
+            case CHERRY -> ModItems.CHERRY_AIR_SHIP.get();
+            case DARK_OAK -> ModItems.DARK_OAK_AIR_SHIP.get();
+            case JUNGLE -> ModItems.JUNGLE_AIR_SHIP.get();
+            case MANGROVE -> ModItems.MANGROVE_AIR_SHIP.get();
             case OAK -> ModItems.OAK_AIR_SHIP.get();
             case SPRUCE -> ModItems.SPRUCE_AIR_SHIP.get();
         };
@@ -89,6 +95,12 @@ public class AirShipEntity extends Boat implements net.minecraftforge.common.ext
     }
 
     public static enum Type implements StringRepresentable {
+        ACACIA(Blocks.ACACIA_PLANKS, "acacia"),
+        BIRCH(Blocks.BIRCH_PLANKS, "birch"),
+        CHERRY(Blocks.CHERRY_PLANKS, "cherry"),
+        DARK_OAK(Blocks.DARK_OAK_PLANKS, "dark_oak"),
+        JUNGLE(Blocks.JUNGLE_PLANKS, "jungle"),
+        MANGROVE(Blocks.MANGROVE_PLANKS, "mangrove"),
         OAK(Blocks.OAK_PLANKS, "oak"),
         SPRUCE(Blocks.SPRUCE_PLANKS, "spruce");
 

@@ -47,7 +47,15 @@
   "item.bitsandbaubs.propeller": "Propeller",
   "item.bitsandbaubs.engine": "Engine",
   "item.bitsandbaubs.air_balloon": "Air Balloon",
+
+  "item.bitsandbaubs.acacia_air_ship": "Acacia Air Ship",
+  "item.bitsandbaubs.birch_air_ship": "Birch Air Ship",
+  "item.bitsandbaubs.cherry_air_ship": "Cherry Air Ship",
+  "item.bitsandbaubs.dark_oak_air_ship": "Dark Oak Air Ship",
+  "item.bitsandbaubs.jungle_air_ship": "Jungle Air Ship",
+  "item.bitsandbaubs.mangrove_air_ship": "Mangrove Air Ship",
   "item.bitsandbaubs.oak_air_ship": "Oak Air Ship",
+  "item.bitsandbaubs.spruce_air_ship": "Spruce Air Ship",
 
   "block.bitsandbaubs.platinum_block": "Block of Platinum",
   "block.bitsandbaubs.raw_platinum_block": "Block of Raw Platinum",

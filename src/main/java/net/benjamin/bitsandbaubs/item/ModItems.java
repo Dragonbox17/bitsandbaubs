@@ -70,6 +70,30 @@ public class ModItems {
             ITEMS.register("fang_beast_spawn_egg",
                     () -> new ForgeSpawnEggItem(ModEntities.FANG_BEAST, 0x404646, 0x7bffa3, new Item.Properties()));
 
+    public static final RegistryObject<Item> ACACIA_AIR_SHIP =
+            ITEMS.register("acacia_air_ship",
+                    () -> new AirShipItem(false, AirShipEntity.Type.ACACIA, new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> BIRCH_AIR_SHIP =
+            ITEMS.register("birch_air_ship",
+                    () -> new AirShipItem(false, AirShipEntity.Type.BIRCH, new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> CHERRY_AIR_SHIP =
+            ITEMS.register("cherry_air_ship",
+                    () -> new AirShipItem(false, AirShipEntity.Type.CHERRY, new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> DARK_OAK_AIR_SHIP =
+            ITEMS.register("dark_oak_air_ship",
+                    () -> new AirShipItem(false, AirShipEntity.Type.DARK_OAK, new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> JUNGLE_AIR_SHIP =
+            ITEMS.register("jungle_air_ship",
+                    () -> new AirShipItem(false, AirShipEntity.Type.JUNGLE, new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> MANGROVE_AIR_SHIP =
+            ITEMS.register("mangrove_air_ship",
+                    () -> new AirShipItem(false, AirShipEntity.Type.MANGROVE, new Item.Properties().stacksTo(1)));
+
     public static final RegistryObject<Item> OAK_AIR_SHIP =
             ITEMS.register("oak_air_ship",
                     () -> new AirShipItem(false, AirShipEntity.Type.OAK, new Item.Properties().stacksTo(1)));

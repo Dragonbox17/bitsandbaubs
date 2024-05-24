@@ -123,6 +123,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.PLATINUM_LEGGINGS);
         trimmedArmorItem(ModItems.PLATINUM_BOOTS);
 
+        simpleItem(ModItems.ACACIA_AIR_SHIP);
+        simpleItem(ModItems.BIRCH_AIR_SHIP);
+        simpleItem(ModItems.CHERRY_AIR_SHIP);
+        simpleItem(ModItems.DARK_OAK_AIR_SHIP);
+        simpleItem(ModItems.JUNGLE_AIR_SHIP);
+        simpleItem(ModItems.MANGROVE_AIR_SHIP);
         simpleItem(ModItems.OAK_AIR_SHIP);
         simpleItem(ModItems.SPRUCE_AIR_SHIP);
 
