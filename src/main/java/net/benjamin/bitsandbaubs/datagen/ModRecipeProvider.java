@@ -130,6 +130,72 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.PHANTOM_MEMBRANE), has(Items.PHANTOM_MEMBRANE))
                 .save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ACACIA_AIR_SHIP.get())
+                .pattern("EAE")
+                .pattern("LBL")
+                .pattern("   ")
+                .define('E', ModItems.ENGINE.get())
+                .define('A', ModItems.AIR_BALLOON.get())
+                .define('B', Items.ACACIA_BOAT)
+                .define('L', Items.LEAD)
+                .unlockedBy(getHasName(ModItems.AIR_BALLOON.get()), has(ModItems.AIR_BALLOON.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BIRCH_AIR_SHIP.get())
+                .pattern("EAE")
+                .pattern("LBL")
+                .pattern("   ")
+                .define('E', ModItems.ENGINE.get())
+                .define('A', ModItems.AIR_BALLOON.get())
+                .define('B', Items.BIRCH_BOAT)
+                .define('L', Items.LEAD)
+                .unlockedBy(getHasName(ModItems.AIR_BALLOON.get()), has(ModItems.AIR_BALLOON.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CHERRY_AIR_SHIP.get())
+                .pattern("EAE")
+                .pattern("LBL")
+                .pattern("   ")
+                .define('E', ModItems.ENGINE.get())
+                .define('A', ModItems.AIR_BALLOON.get())
+                .define('B', Items.CHERRY_BOAT)
+                .define('L', Items.LEAD)
+                .unlockedBy(getHasName(ModItems.AIR_BALLOON.get()), has(ModItems.AIR_BALLOON.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.DARK_OAK_AIR_SHIP.get())
+                .pattern("EAE")
+                .pattern("LBL")
+                .pattern("   ")
+                .define('E', ModItems.ENGINE.get())
+                .define('A', ModItems.AIR_BALLOON.get())
+                .define('B', Items.DARK_OAK_BOAT)
+                .define('L', Items.LEAD)
+                .unlockedBy(getHasName(ModItems.AIR_BALLOON.get()), has(ModItems.AIR_BALLOON.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.JUNGLE_AIR_SHIP.get())
+                .pattern("EAE")
+                .pattern("LBL")
+                .pattern("   ")
+                .define('E', ModItems.ENGINE.get())
+                .define('A', ModItems.AIR_BALLOON.get())
+                .define('B', Items.JUNGLE_BOAT)
+                .define('L', Items.LEAD)
+                .unlockedBy(getHasName(ModItems.AIR_BALLOON.get()), has(ModItems.AIR_BALLOON.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MANGROVE_AIR_SHIP.get())
+                .pattern("EAE")
+                .pattern("LBL")
+                .pattern("   ")
+                .define('E', ModItems.ENGINE.get())
+                .define('A', ModItems.AIR_BALLOON.get())
+                .define('B', Items.MANGROVE_BOAT)
+                .define('L', Items.LEAD)
+                .unlockedBy(getHasName(ModItems.AIR_BALLOON.get()), has(ModItems.AIR_BALLOON.get()))
+                .save(pRecipeOutput);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.OAK_AIR_SHIP.get())
                 .pattern("EAE")
                 .pattern("LBL")
@@ -137,6 +203,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('E', ModItems.ENGINE.get())
                 .define('A', ModItems.AIR_BALLOON.get())
                 .define('B', Items.OAK_BOAT)
+                .define('L', Items.LEAD)
+                .unlockedBy(getHasName(ModItems.AIR_BALLOON.get()), has(ModItems.AIR_BALLOON.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SPRUCE_AIR_SHIP.get())
+                .pattern("EAE")
+                .pattern("LBL")
+                .pattern("   ")
+                .define('E', ModItems.ENGINE.get())
+                .define('A', ModItems.AIR_BALLOON.get())
+                .define('B', Items.SPRUCE_BOAT)
                 .define('L', Items.LEAD)
                 .unlockedBy(getHasName(ModItems.AIR_BALLOON.get()), has(ModItems.AIR_BALLOON.get()))
                 .save(pRecipeOutput);
