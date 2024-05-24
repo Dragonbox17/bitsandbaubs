@@ -4,9 +4,7 @@ import net.benjamin.bitsandbaubs.BitsAndBaubs;
 import net.benjamin.bitsandbaubs.entity.custom.*;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.AbstractArrow;
-import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -20,9 +18,13 @@ public class ModEntities {
             ENTITY_TYPES.register("terracotta_golem", () -> EntityType.Builder.of(TerracottaGolemEntity::new, MobCategory.CREATURE)
                     .sized(1, 2).build("terracotta_golem"));
 
-    public static final RegistryObject<EntityType<AirShipEntity>> AIR_SHIP =
-            ENTITY_TYPES.register("air_ship", () -> EntityType.Builder.<AirShipEntity>of(AirShipEntity::new, MobCategory.MISC)
-                    .sized(2, 4).build("air_ship"));
+    public static final RegistryObject<EntityType<AirShipEntity>> OAK_AIR_SHIP =
+            ENTITY_TYPES.register("oak_air_ship", () -> EntityType.Builder.<AirShipEntity>of(AirShipEntity::new, MobCategory.MISC)
+                    .sized(2, 4).build("oak_air_ship"));
+
+    public static final RegistryObject<EntityType<AirShipEntity>> SPRUCE_AIR_SHIP =
+            ENTITY_TYPES.register("spruce_air_ship", () -> EntityType.Builder.<AirShipEntity>of(AirShipEntity::new, MobCategory.MISC)
+                    .sized(2, 4).build("spruce_air_ship"));
 
     public static final RegistryObject<EntityType<AbstractArrow>> BULLET_ROUND =
             ENTITY_TYPES.register("bullet_round", () -> EntityType.Builder.<AbstractArrow>of(BulletRound::new, MobCategory.MISC)

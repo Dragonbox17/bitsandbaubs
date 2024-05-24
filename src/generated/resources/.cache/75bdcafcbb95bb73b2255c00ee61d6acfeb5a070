@@ -1,4 +1,4 @@
-// 1.20.1	2024-05-23T12:13:32.9514408	Item Models: bitsandbaubs
+// 1.20.1	2024-05-23T18:04:19.2943404	Item Models: bitsandbaubs
 b6d3b2e7f50b0f85cab97d7012c27f0ca2fc4636 assets/bitsandbaubs/models/item/air_balloon.json
 93ceae9bf0cfc51f620abfd807535dc1bf470e3f assets/bitsandbaubs/models/item/ambrosia.json
 6979495ed8462561946b45f06cc15f066beec89a assets/bitsandbaubs/models/item/black_berries.json
@@ -95,6 +95,7 @@ eabf02651881c32de2e99146c61c7479a6e332d4 assets/bitsandbaubs/models/item/platinu
 f5434b3c80ce38012f80bddb94748bbeb895bcb2 assets/bitsandbaubs/models/item/scythe_of_spring.json
 ab7c0044d1083adae00ba7b86a0b655c1b8acfe7 assets/bitsandbaubs/models/item/scythe_of_summer.json
 76e95a867d5491c9e98faa7f6cf528118d32429e assets/bitsandbaubs/models/item/scythe_of_winter.json
+501a805c05473c25d0358c416dc1de1555295498 assets/bitsandbaubs/models/item/spruce_air_ship.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/bitsandbaubs/models/item/terracotta_golem_spawn_egg.json
 9a675b57882beddde08109c33021de07b0773fc5 assets/bitsandbaubs/models/item/wither_skeleton_ward.json
 f89bc633f4417f970b77cd502133bea969cef7ad assets/bitsandbaubs/models/item/zombie_ward.json

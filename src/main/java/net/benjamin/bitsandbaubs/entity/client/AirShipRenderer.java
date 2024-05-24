@@ -27,7 +27,7 @@ import java.util.Map;
 import java.util.List;
 import java.util.stream.Stream;
 
-public class AirShipRenderer extends EntityRenderer {
+public class AirShipRenderer extends EntityRenderer<AirShipEntity> {
     protected final EntityModel<AirShipEntity> model;
 
     public AirShipRenderer(EntityRendererProvider.Context pContext) {
@@ -36,7 +36,13 @@ public class AirShipRenderer extends EntityRenderer {
     }
 
     @Override
-    public void render(Entity p_113929_, float p_113930_, float p_113931_, PoseStack p_113932_, MultiBufferSource p_113933_, int p_113934_) {
+    public ResourceLocation getTextureLocation(AirShipEntity p_114482_) {
+        ResourceLocation AIR_SHIP_TEXTURE = new ResourceLocation(BitsAndBaubs.MOD_ID, "textures/entity/" + AirShipEntity.getModVariant( p_114482_).getName() + ".png");
+        return AIR_SHIP_TEXTURE;
+    }
+
+    @Override
+    public void render(AirShipEntity p_113929_, float p_113930_, float p_113931_, PoseStack p_113932_, MultiBufferSource p_113933_, int p_113934_) {
         super.render(p_113929_, p_113930_, p_113931_, p_113932_, p_113933_, p_113934_);
 
         p_113932_.pushPose();
@@ -51,9 +57,4 @@ public class AirShipRenderer extends EntityRenderer {
         p_113932_.popPose();
     }
 
-    @Override
-    public ResourceLocation getTextureLocation(Entity p_114482_) {
-        ResourceLocation AIR_SHIP_TEXTURE = new ResourceLocation(BitsAndBaubs.MOD_ID, "textures/entity/" + AirShipEntity.getModVariant((AirShipEntity) p_114482_).getName() + ".png");
-        return AIR_SHIP_TEXTURE;
-    }
 }

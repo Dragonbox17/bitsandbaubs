@@ -95,6 +95,7 @@ public class BitsAndBaubsModTab {
                 pOutput.accept(ModItems.ENGINE.get());
                 pOutput.accept(ModItems.AIR_BALLOON.get());
                 pOutput.accept(ModItems.OAK_AIR_SHIP.get());
+                pOutput.accept(ModItems.SPRUCE_AIR_SHIP.get());
 
                 pOutput.accept(ModItems.TERRACOTTA_GOLEM_SPAWN_EGG.get());
                 pOutput.accept(ModItems.CULLAGER_SPAWN_EGG.get());

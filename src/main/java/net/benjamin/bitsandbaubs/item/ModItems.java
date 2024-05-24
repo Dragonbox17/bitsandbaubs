@@ -74,6 +74,10 @@ public class ModItems {
             ITEMS.register("oak_air_ship",
                     () -> new AirShipItem(false, AirShipEntity.Type.OAK, new Item.Properties().stacksTo(1)));
 
+    public static final RegistryObject<Item> SPRUCE_AIR_SHIP =
+            ITEMS.register("spruce_air_ship",
+                    () -> new AirShipItem(false, AirShipEntity.Type.SPRUCE, new Item.Properties().stacksTo(1)));
+
     public static final RegistryObject<Item> PROPELLER =
             ITEMS.register("propeller", () -> new Item(new Item.Properties()));
 

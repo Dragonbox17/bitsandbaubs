@@ -2,11 +2,11 @@ package net.benjamin.bitsandbaubs.entity.custom;
 
 import com.google.common.collect.Lists;
 import net.benjamin.bitsandbaubs.entity.ModEntities;
+import net.benjamin.bitsandbaubs.item.AirShipItem;
 import net.benjamin.bitsandbaubs.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
@@ -18,19 +18,15 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.vehicle.Boat;
 import net.minecraft.world.entity.vehicle.DismountHelper;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.AirBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.WaterlilyBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.shapes.BooleanOp;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraftforge.common.MinecraftForge;
 
 import java.util.List;
 import java.util.function.IntFunction;
@@ -52,7 +48,8 @@ public class AirShipEntity extends Boat implements net.minecraftforge.common.ext
     }
 
     public AirShipEntity(Level pLevel, double pX, double pY, double pZ) {
-        this(ModEntities.AIR_SHIP.get(), pLevel);
+        this(ModEntities.OAK_AIR_SHIP.get(), pLevel);
+        setModVariant(Type.OAK);
         this.xo = pX;
         this.yo = pY;
         this.zo = pZ;
@@ -62,6 +59,7 @@ public class AirShipEntity extends Boat implements net.minecraftforge.common.ext
     public Item getDropItem() {
         return switch (getModVariant(this)) {
             case OAK -> ModItems.OAK_AIR_SHIP.get();
+            case SPRUCE -> ModItems.SPRUCE_AIR_SHIP.get();
         };
     }
 
@@ -79,17 +77,20 @@ public class AirShipEntity extends Boat implements net.minecraftforge.common.ext
     }
 
     protected void addAdditionalSaveData(CompoundTag pCompound) {
-        pCompound.putString("Type", this.getModVariant(this).getSerializedName());
+        super.addAdditionalSaveData(pCompound);
+        pCompound.putString("Type", AirShipEntity.getModVariant(this).getSerializedName());
     }
 
     protected void readAdditionalSaveData(CompoundTag pCompound) {
+        super.readAdditionalSaveData(pCompound);
         if(pCompound.contains("Type", 8)) {
             this.setModVariant(Type.byName(pCompound.getString("Type")));
         }
     }
 
     public static enum Type implements StringRepresentable {
-        OAK(Blocks.OAK_PLANKS, "oak");
+        OAK(Blocks.OAK_PLANKS, "oak"),
+        SPRUCE(Blocks.SPRUCE_PLANKS, "spruce");
 
         private final String name;
         private final Block planks;

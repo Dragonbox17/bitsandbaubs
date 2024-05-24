@@ -14,8 +14,6 @@ import net.minecraft.world.entity.EntitySelector;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.vehicle.Boat;
-import net.minecraft.world.entity.vehicle.ChestBoat;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.UseOnContext;
@@ -27,12 +25,9 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.SpawnerBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
-import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
-import net.minecraft.world.phys.Vec3;
 
-import java.util.List;
 import java.util.Objects;
 import java.util.function.Predicate;
 
@@ -61,7 +56,12 @@ public class AirShipItem extends Item {
                 BlockEntity blockentity = level.getBlockEntity(blockpos);
                 if (blockentity instanceof SpawnerBlockEntity) {
                     SpawnerBlockEntity spawnerblockentity = (SpawnerBlockEntity)blockentity;
-                    EntityType<?> entitytype1 = ModEntities.AIR_SHIP.get();
+
+                    EntityType<?> entitytype1 = switch(this.type) {
+                        case SPRUCE -> ModEntities.SPRUCE_AIR_SHIP.get();
+                        case OAK -> ModEntities.OAK_AIR_SHIP.get();
+                    };
+
                     spawnerblockentity.setEntityId(entitytype1, level.getRandom());
                     blockentity.setChanged();
                     level.sendBlockUpdated(blockpos, blockstate, blockstate, 3);
@@ -78,8 +78,14 @@ public class AirShipItem extends Item {
                 blockpos1 = blockpos.relative(direction);
             }
 
-            EntityType<?> entitytype = ModEntities.AIR_SHIP.get();
-            if (entitytype.spawn((ServerLevel)level, itemstack, pContext.getPlayer(), blockpos1, MobSpawnType.SPAWN_EGG, true, !Objects.equals(blockpos, blockpos1) && direction == Direction.UP) != null) {
+            EntityType<?> entitytype = switch(this.type) {
+                case SPRUCE -> ModEntities.SPRUCE_AIR_SHIP.get();
+                case OAK -> ModEntities.OAK_AIR_SHIP.get();
+            };
+
+            AirShipEntity airShipEntity = (AirShipEntity) entitytype.spawn((ServerLevel)pContext.getLevel(), itemstack, pContext.getPlayer(), new BlockPos(blockpos.getX(), blockpos.getY() + 1, blockpos.getZ()), MobSpawnType.TRIGGERED, false, false);
+            if (airShipEntity != null) {
+                airShipEntity.setModVariant(this.type);
                 itemstack.shrink(1);
                 level.gameEvent(pContext.getPlayer(), GameEvent.ENTITY_PLACE, blockpos);
             }
@@ -100,11 +106,17 @@ public class AirShipItem extends Item {
             if (!(pLevel.getBlockState(blockpos).getBlock() instanceof LiquidBlock)) {
                 return InteractionResultHolder.pass(itemstack);
             } else if (pLevel.mayInteract(pPlayer, blockpos) && pPlayer.mayUseItemAt(blockpos, blockhitresult.getDirection(), itemstack)) {
-                EntityType<?> entitytype = ModEntities.AIR_SHIP.get();
-                Entity entity = entitytype.spawn((ServerLevel)pLevel, itemstack, pPlayer, blockpos, MobSpawnType.SPAWN_EGG, false, false);
+
+                EntityType<?> entitytype = switch(this.type) {
+                    case SPRUCE -> ModEntities.SPRUCE_AIR_SHIP.get();
+                    case OAK -> ModEntities.OAK_AIR_SHIP.get();
+                };
+
+                AirShipEntity entity = (AirShipEntity) entitytype.spawn((ServerLevel)pLevel, itemstack, pPlayer, blockpos, MobSpawnType.TRIGGERED, false, false);
                 if (entity == null) {
                     return InteractionResultHolder.pass(itemstack);
                 } else {
+                    entity.setModVariant(this.type);
                     if (!pPlayer.getAbilities().instabuild) {
                         itemstack.shrink(1);
                     }

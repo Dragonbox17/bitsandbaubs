@@ -92,7 +92,8 @@ public class BitsAndBaubs
             Sheets.addWoodType(ModWoodTypes.CORRUPTED);
 
             EntityRenderers.register(ModEntities.TERRACOTTA_GOLEM.get(), TerracottaGolemRenderer::new);
-            EntityRenderers.register(ModEntities.AIR_SHIP.get(), p_174010_ -> new AirShipRenderer(p_174010_));
+            EntityRenderers.register(ModEntities.OAK_AIR_SHIP.get(), p_174010_ -> new AirShipRenderer(p_174010_));
+            EntityRenderers.register(ModEntities.SPRUCE_AIR_SHIP.get(), p_174010_ -> new AirShipRenderer(p_174010_));
             EntityRenderers.register(ModEntities.BULLET_ROUND.get(), p_174010_ -> new BulletRoundRenderer(p_174010_));
             EntityRenderers.register(ModEntities.CULLAGER.get(), CullagerRenderer::new);
             EntityRenderers.register(ModEntities.FANG_BEAST.get(), FangBeastRenderer::new);
